@@ -1,3 +1,117 @@
 @import "../libs/bootstrap-5.1.3/scss/bootstrap.scss";
-@import url(/scss/nosotros.scss);
-@import url(/scss/canva.scss);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+
+@include media-breakpoint-between(xs, sm) {
+}
+
+
+@media (min-width: 768px) and (max-width: 3000px)  {
+  $blue-base: #96dbe6;
+  $purple-base: #cbaacb;
+  $yellow-base: #ffffb5;
+  $orange-base: #ffccb6;
+  $pink-base: #f3b0c3;
+
+  $secondary-yellow1: #f9f871;
+  $secundary-yellow: #ffcf57;
+  $secundary-orange: #ff9671;
+  $secondary-pink1: #ff6f91;
+  $secondary-pink2: #d65db1;
+  $secondary-purple: #845ec2;
+
+
+  @mixin background($imgpath, $size, $position: 0 -25px, $repeat: no-repeat) {
+    background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
+      size: $size;
+    }
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  #mainMenu {
+    background-color: $blue-base;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  #container-nav {
+    border-top-color: $secondary-purple;
+    border-bottom-color: $secondary-pink1;
+  }
+
+  #container-nav a {
+    color: black;
+    margin: 0% 1rem;
+  }
+
+  #container-nav a:hover {
+    color: white;
+    margin: 0% 1rem;
+    background-color: $secundary-orange;
+  }
+
+  .title-main {
+    font-size: 2em;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: gray;
+    padding: 1% 0%;
+  }
+  .title-main span {
+    font-size: 0.5em;
+  }
+  #subtitle-main {
+    margin-top: 2rem;
+  }
+  #img_main {
+    width: 100%;
+    height: 35rem;
+    @include background("../imgs/pexels-lukas-317377.jpg", "300px 200px");
+  }
+
+  #my-services {
+    background: rgb(150, 219, 230);
+    background: linear-gradient(
+      180deg,
+      rgba(150, 219, 230, 1) 19%,
+      $secundary-yellow 73%,
+      $yellow-base 100%
+    );
+    font-family: "Open Sans", "sans-serif";
+  }
+
+  .services-section {
+    background-color: white;
+    margin: 10px;
+  }
+
+  .services-section h3 {
+    background-color: $yellow-base;
+    box-shadow: 5px 5px $secundary-orange;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .top-nav {
+    background-color: $orange-base;
+    color: black;
+    padding: 0rem 6rem;
+  }
+  .contenedor {
+    width: 120rem;
+  }
+}

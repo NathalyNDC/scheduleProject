@@ -1,6 +1,17 @@
-#canvas {
+@import "../libs/bootstrap-5.1.3/scss/bootstrap.scss";
+
+#draw {
     width: 80%;
     height: 80%;
-    margin: 100px;
-    background-color: aqua;
+    margin-top: 30px;
+    background-color: rgb(223, 219, 220);
+    
+}
+
+#david {
+    color: pink;
+}
+
+#clean {
+    display:block;
 }

@@ -4,8 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(/scss/nosotros.scss);
-@import url(/scss/canva.scss);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11956,6 +11955,82 @@ fieldset:disabled .btn {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 3000px) {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+  }
+  #mainMenu {
+    background-color: #96dbe6;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+  }
+  #container-nav {
+    border-top-color: #845ec2;
+    border-bottom-color: #ff6f91;
+  }
+  #container-nav a {
+    color: black;
+    margin: 0% 1rem;
+  }
+  #container-nav a:hover {
+    color: white;
+    margin: 0% 1rem;
+    background-color: #ff9671;
+  }
+  .title-main {
+    font-size: 2em;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    color: gray;
+    padding: 1% 0%;
+  }
+  .title-main span {
+    font-size: 0.5em;
+  }
+  #subtitle-main {
+    margin-top: 2rem;
+  }
+  #img_main {
+    width: 100%;
+    height: 35rem;
+    background-image: url("../imgs/pexels-lukas-317377.jpg");
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: "300px 200px";
+  }
+  #my-services {
+    background: #96dbe6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(19%, #96dbe6), color-stop(73%, #ffcf57), to(#ffffb5));
+    background: linear-gradient(180deg, #96dbe6 19%, #ffcf57 73%, #ffffb5 100%);
+    font-family: "Open Sans", "sans-serif";
+  }
+  .services-section {
+    background-color: white;
+    margin: 10px;
+  }
+  .services-section h3, .services-section .h3 {
+    background-color: #ffffb5;
+    -webkit-box-shadow: 5px 5px #ff9671;
+            box-shadow: 5px 5px #ff9671;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+  }
+  .top-nav {
+    background-color: #ffccb6;
+    color: black;
+    padding: 0rem 6rem;
+  }
+  .contenedor {
+    width: 120rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
