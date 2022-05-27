@@ -22,7 +22,7 @@ $secundary-orange: #ff9671;
 $secondary-pink1: #ff6f91;
 $secondary-pink2: #d65db1;
 $secondary-purple: #845ec2;
-
+/*
 //RESPONSIVE DESIGN - MOBILE
 @media (min-width: 0px) and (max-width: 767px) {
   
@@ -33,7 +33,7 @@ $secondary-purple: #845ec2;
 @media (min-width: 768px) and (max-width: 3000px)  {
 
 }
-
+*/
 
 
 @mixin background($imgpath, $size, $position: 0 -25px, $repeat: no-repeat) {
@@ -56,14 +56,7 @@ body {
   width: 100%;
 }
 
-#mainMenu {
-  background-color: $blue-base;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-  weight: 100%;
-  margin: 1em 0em;
-}
+
 
 .title-main {
   font-size: 2em;
@@ -79,42 +72,54 @@ body {
 
 .contenedor{
   width: 120rem;
-  
+  margin: 0% auto;
 }
 .main-nav {
-  border-top-color: $secondary-purple;
   border-bottom-color: $secondary-pink1;
   font-family: $open-sans;
   font-weight: 300;
   display: flex;
   justify-content: space-around;
+  background: rgb(243,176,195);
+  background: linear-gradient(0deg, rgba(243,176,195,1) 19%, rgba(255,150,113,1) 46%, rgba(255,111,145,1) 94%);
 }
-.navbar-nav{
-  display: flex;
-  justify-content: space-between;
-}
-.main-nav a {
-  color: black;
-  margin: 0% 1rem;
-  font-family: $open-sans;
 
+.nav-bg{
+  background: rgb(243,176,195);
+  background: linear-gradient(0deg, rgba(243,176,195,1) 19%, rgba(255,150,113,1) 46%, rgba(255,111,145,1) 94%);
+}
+
+.main-nav a {
+  color: white;
+  padding: 1rem 1rem;
+  font-family: $open-sans;
+  text-decoration: none;
 }
 
 .main-nav a:hover {
   color: white;
-  margin: 0% 1rem;
+  padding: 1rem 1rem;
   background-color: $secundary-orange;
 }
 
+.subtit {
+  background-color: $blue-base;
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
   #subtitle-main {
-    margin-top: 2rem;
     font-family: $nunito-sans;
     font-weight: 400;
   }
   #img_main {
     width: 100%;
-    height: 35rem;
-    @include background("../imgs/pexels-lukas-317377.jpg", "300px 200px");
+    height: 50rem;
+    //@include background("../imgs/pexels-lukas-317377.jpg", "50px 20px");
+   background-image: url("../imgs/pexels-lukas-317377.jpg");
+   background-size: cover;
+
   }
 
   #my-services {

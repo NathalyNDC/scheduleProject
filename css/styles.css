@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500);
+/*
+//RESPONSIVE DESIGN - MOBILE
+@media (min-width: 0px) and (max-width: 767px) {
+  
+}
+
+
+//RESPONSIVE DESIGN - TABLET AND PC
+@media (min-width: 768px) and (max-width: 3000px)  {
+
+}
+*/
 html {
   font-size: 62.5%;
 }
@@ -8,15 +20,6 @@ body {
   font-family: "Open Sans", "sans-serif";
   font-weight: 300;
   width: 100%;
-}
-
-#mainMenu {
-  background-color: #96dbe6;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-  weight: 100%;
-  margin: 1em 0em;
 }
 
 .title-main {
@@ -34,10 +37,10 @@ body {
 
 .contenedor {
   width: 120rem;
+  margin: 0% auto;
 }
 
 .main-nav {
-  border-top-color: #845ec2;
   border-bottom-color: #ff6f91;
   font-family: "Open Sans", "sans-serif";
   font-weight: 300;
@@ -46,42 +49,48 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background: #f3b0c3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #f3b0c3), color-stop(46%, #ff9671), color-stop(94%, #ff6f91));
+  background: linear-gradient(0deg, #f3b0c3 19%, #ff9671 46%, #ff6f91 94%);
 }
 
-.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.nav-bg {
+  background: #f3b0c3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #f3b0c3), color-stop(46%, #ff9671), color-stop(94%, #ff6f91));
+  background: linear-gradient(0deg, #f3b0c3 19%, #ff9671 46%, #ff6f91 94%);
 }
 
 .main-nav a {
-  color: black;
-  margin: 0% 1rem;
+  color: white;
+  padding: 1rem 1rem;
   font-family: "Open Sans", "sans-serif";
+  text-decoration: none;
 }
 
 .main-nav a:hover {
   color: white;
-  margin: 0% 1rem;
+  padding: 1rem 1rem;
   background-color: #ff9671;
 }
 
+.subtit {
+  background-color: #96dbe6;
+  padding-top: 2rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
 #subtitle-main {
-  margin-top: 2rem;
   font-family: "Nunito Sans", serif;
   font-weight: 400;
 }
 
 #img_main {
   width: 100%;
-  height: 35rem;
+  height: 50rem;
   background-image: url("../imgs/pexels-lukas-317377.jpg");
-  background-position: 0 -25px;
-  background-repeat: no-repeat;
-  background-size: "300px 200px";
+  background-size: cover;
 }
 
 #my-services {
