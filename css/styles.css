@@ -1,18 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500|Qwitcher+Grypen:400,700);
-/*
-//RESPONSIVE DESIGN - MOBILE
-@media (min-width: 0px) and (max-width: 767px) {
-  
-}
-
-
-//RESPONSIVE DESIGN - TABLET AND PC
-@media (min-width: 768px) and (max-width: 3000px)  {
-
-}
-*/
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500|Qwitcher+Grypen:400,700|Poppins:200,300,400,500,600);
 html {
   font-size: 62.5%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -23,21 +19,29 @@ body {
 }
 
 .title-main {
-  font-size: 4em;
+  font-size: 6em;
   font-family: "Qwitcher Grypen", cursive;
   background-color: white;
   color: gray;
   text-align: center;
-  padding: 1% 0%;
+  padding: 1%;
+  margin: 1% 0% 0.2% 0%;
+  line-height: 0.7em;
 }
 
-.title-main #career {
-  font-size: 0.25em;
+#career {
+  font-size: 1.5em;
   font-family: "Nunito Sans", serif;
+  display: block;
+  background-color: white;
+  color: gray;
+  text-align: center;
+  padding: 0.1%;
+  margin: 0% 0% 1% 0%;
 }
 
-.contenedor {
-  width: 120rem;
+.container {
+  max-width: 120rem;
   margin: 0% auto;
 }
 
@@ -51,9 +55,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #f3b0c3;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #f3b0c3), color-stop(46%, #ff9671), color-stop(94%, #ff6f91));
-  background: linear-gradient(0deg, #f3b0c3 19%, #ff9671 46%, #ff6f91 94%);
 }
 
 .nav-bg {
@@ -69,7 +70,7 @@ body {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .main-nav a:hover {
@@ -78,31 +79,74 @@ body {
   background-color: #ff9671;
 }
 
-.subtit {
-  background-color: #96dbe6;
-  padding-top: 2rem;
-  width: 100%;
+.hero {
+  background-image: url("../imgs/desk2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 52rem;
+  padding: 4rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1c106b;
+  position: relative;
+}
+
+.content-hero {
+  position: absolute;
+  background-color: rgba(28, 16, 107, 0.03);
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #subtitle-main {
   font-family: "Nunito Sans", serif;
-  font-weight: 400;
+  font-weight: 500;
+  width: 48rem;
+  font-size: 2.8rem;
+  margin: 5rem auto;
 }
 
-#img_main {
-  width: 100%;
-  height: 50rem;
-  background-image: url("../imgs/pexels-lukas-317377.jpg");
-  background-size: cover;
+#subtitle-main span {
+  display: block;
+}
+
+.btn-info {
+  background-color: #09cee0;
+  color: white;
+  border-color: #09a3e0;
+  border-width: 0.1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  font-family: "Nunito Sans", serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.btn-info:hover {
+  background-color: #09d9e0;
 }
 
 #my-services {
-  background: #96dbe6;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(19%, #96dbe6), color-stop(73%, #ffcf57), to(#ffffb5));
-  background: linear-gradient(180deg, #96dbe6 19%, #ffcf57 73%, #ffffb5 100%);
+  background-color: #e9f1fb;
   font-family: "Open Sans", "sans-serif";
+  margin: 0;
+  padding: 2rem 10rem;
+}
+
+#my-services h2 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+h2, h3 {
+  text-transform: uppercase;
 }
 
 .services-section {
@@ -111,9 +155,9 @@ body {
 }
 
 .services-section h3 {
-  background-color: #ffffb5;
-  -webkit-box-shadow: 5px 5px #ff9671;
-          box-shadow: 5px 5px #ff9671;
+  background-image: radial-gradient(circle at 107.92% 90.56%, #00dbe9 81.25%, #00d7f5 87.5%, #00d3ff 93.75%, #00d0ff 100%);
+  -webkit-box-shadow: 5px 5px #ffcf57;
+          box-shadow: 5px 5px #ffcf57;
   text-align: center;
   font-weight: 500;
   font-family: "Open Sans", "sans-serif";
@@ -123,5 +167,40 @@ body {
   background-color: #ffccb6;
   color: black;
   padding: 0rem 6rem;
+}
+
+#contact {
+  background-color: #e9f1fb;
+}
+
+footer {
+  background-image: radial-gradient(circle at 107.92% 90.56%, #00dbe9 81.25%, #00d7f5 87.5%, #00d3ff 93.75%, #00d0ff 100%);
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-nav a {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .nav-bg {
+    background: #f3b0c3;
+    background: radial-gradient(circle, #f3b0c3 33%, #ff9671 56%, #ff6f91 77%);
+  }
+  .content-hero {
+    position: absolute;
+    background-color: rgba(28, 16, 107, 0.4);
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
