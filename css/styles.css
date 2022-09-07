@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500|Qwitcher+Grypen:400,700);
 /*
 //RESPONSIVE DESIGN - MOBILE
 @media (min-width: 0px) and (max-width: 767px) {
@@ -23,16 +23,17 @@ body {
 }
 
 .title-main {
-  font-size: 2em;
-  font-family: "Nunito Sans", serif;
+  font-size: 4em;
+  font-family: "Qwitcher Grypen", cursive;
   background-color: white;
   color: gray;
   text-align: center;
   padding: 1% 0%;
 }
 
-.title-main span {
-  font-size: 0.5em;
+.title-main #career {
+  font-size: 0.25em;
+  font-family: "Nunito Sans", serif;
 }
 
 .contenedor {
@@ -47,8 +48,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #f3b0c3;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(19%, #f3b0c3), color-stop(46%, #ff9671), color-stop(94%, #ff6f91));
   background: linear-gradient(0deg, #f3b0c3 19%, #ff9671 46%, #ff6f91 94%);
@@ -65,6 +67,9 @@ body {
   padding: 1rem 1rem;
   font-family: "Open Sans", "sans-serif";
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 2rem;
 }
 
 .main-nav a:hover {
