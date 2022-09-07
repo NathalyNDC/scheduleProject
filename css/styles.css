@@ -96,15 +96,16 @@ body {
   position: relative;
 }
 
+/*
 .content-hero {
   position: absolute;
-  background-color: rgba(28, 16, 107, 0.03);
+  background-color:rgba(28, 16, 107, 0.03);
   top: 0%;
   left: 0;
   right: 0;
   bottom: 0;
 }
-
+*/
 #subtitle-main {
   font-family: "Nunito Sans", serif;
   font-weight: 500;
@@ -140,9 +141,9 @@ body {
   padding: 2rem 10rem;
 }
 
-#my-services h2 {
+#my-services h2, #contact {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: black;
 }
 
 h2, h3 {
@@ -156,6 +157,7 @@ h2, h3 {
 
 .services-section h3 {
   background-image: radial-gradient(circle at 107.92% 90.56%, #00dbe9 81.25%, #00d7f5 87.5%, #00d3ff 93.75%, #00d0ff 100%);
+  color: white;
   -webkit-box-shadow: 5px 5px #ffcf57;
           box-shadow: 5px 5px #ffcf57;
   text-align: center;
