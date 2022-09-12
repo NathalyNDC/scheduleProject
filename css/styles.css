@@ -56,6 +56,11 @@ h3 {
   color: white;
 }
 
+.enfasis {
+  color: #d65db1;
+  font-weight: 700;
+}
+
 .title-main {
   font-size: 6em;
   font-family: "Qwitcher Grypen", cursive;
@@ -163,21 +168,21 @@ h3 {
   max-width: 1200em;
 }
 
-.row {
+.serv-row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
 }
 
 .services-section {
   background-color: white;
-  margin: 10px;
+  margin: 1rem;
   grid-column: auto;
   grid-row: auto;
-  border-radius: 7px;
+  border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,6 +197,12 @@ h3 {
   text-align: center;
 }
 
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: #ff9671;
+}
+
 .services-section h3 {
   background-image: radial-gradient(circle at 107.92% 90.56%, #00dfdc 81.25%, #00e4d0 93.75%, #09d9e0 100%);
   color: white;
@@ -201,9 +212,20 @@ h3 {
   width: 100%;
 }
 
-.enfasis {
-  color: #d65db1;
-  font-weight: 700;
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: #f1f3f8be;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #contact {
@@ -219,6 +241,13 @@ h3 {
   background-color: #96dbe6;
   padding: 2rem;
   border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
 }
 
 footer {
@@ -248,6 +277,15 @@ footer {
   }
   .btn-info {
     width: 90%;
+  }
+  .serv-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -18,7 +18,7 @@ $blue-base: #1c106b;
 $purple-base: #c192ea;
 $pink-base: #d65db1;
 $background: #e9f1fb;
-
+$grey-base: #f1f3f8be;
 //Color vars - secondary
 $secondary-pink1: #ff6f91;
 $secondary-blue1: #96dbe6;
@@ -86,12 +86,17 @@ h3 {
 
 .tit2 {
   font-family: $poppins;
-  color:$blue-base;
+  color: $blue-base;
 }
 
 .tit3 {
   font-family: $poppins;
   color: white;
+}
+
+.enfasis {
+  color: $pink-base;
+  font-weight: 700;
 }
 
 //Main nav
@@ -119,7 +124,6 @@ h3 {
 .container {
   max-width: 120rem;
   margin: 0% auto;
-
 }
 .main-nav {
   border-bottom-color: $secondary-pink1;
@@ -137,7 +141,6 @@ h3 {
     $tertiary-blue-hover 100%
   );
   border-bottom: 0.5rem solid $yellow-base;
-  
 }
 
 .main-nav a {
@@ -199,20 +202,20 @@ h3 {
   max-width: 1200em;
 }
 
-.row  {
+.serv-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
+  //grid-template-rows: repeat(1, 1fr);
 }
-
 
 .services-section {
   background-color: white;
-  margin: 10px;
+  margin: 1rem;
   grid-column: auto;
   grid-row: auto;
-  border-radius: 7px;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,24 +223,34 @@ h3 {
   text-align: center;
 }
 
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: $orange-base;
+}
+
 .services-section h3 {
   background-image: radial-gradient(
     circle at 107.92% 90.56%,
     $secondary-green 81.25%,
     $green 93.75%,
-    $tertiary-blue-hover 100%);
+    $tertiary-blue-hover 100%
+  );
   color: white;
   box-shadow: 5px 5px $orange-base;
   font-family: $nunito-sans;
   width: 100%;
-  
 }
 
-.enfasis {
-  color: $pink-base;
-  font-weight: 700;
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: $grey-base;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 //Contact section
 #contact {
@@ -253,6 +266,9 @@ h3 {
   background-color: $secondary-blue1;
   padding: 2rem;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  width: 90%;
 }
 
 //Footer section
@@ -278,8 +294,6 @@ footer {
     font-size: 1.8rem;
   }
 
- 
-
   .content-hero {
     position: absolute;
     background-color: rgba($blue-base, 0.4);
@@ -291,6 +305,14 @@ footer {
   }
   .btn-info {
     width: 90%;
+  }
+
+  .serv-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    grid-template-rows: repeat(3, 1fr);
+    //grid-template-rows: repeat(1, 1fr);
   }
 }
 
