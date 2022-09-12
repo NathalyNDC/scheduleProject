@@ -60,7 +60,6 @@ body {
   background-color: $blue-base;
   color: white;
   border: 0;
-  border-width: 0.1rem;
   border-radius: 0.4rem;
   padding: 1rem 2rem;
   font-family: $nunito-sans;
@@ -70,6 +69,7 @@ body {
 
 .btn-info:hover {
   background-color: $tertiary-blue2;
+  cursor: pointer;
 }
 
 .shadow {
@@ -98,6 +98,20 @@ h3 {
   color: $pink-base;
   font-weight: 700;
 }
+
+//**UTILIDADES
+.w-sm-100 {
+  width: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.aling-right {
+  justify-content: flex-end;
+}
+
 
 //Main nav
 .title-main {
@@ -258,32 +272,89 @@ h3 {
   font-family: $open-sans;
   max-width: 1200em;
   padding: 2rem 10rem;
-  color: white;
-  font-weight: 500;
 }
 
 #contact form {
   background-color: $secondary-blue1;
-  padding: 2rem;
   border-radius: 0.5rem;
+  width: Min(60rem, 100%); //use the lowest value
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+#contact form fieldset {
+  border: none;
+}
+
+#contact form legend {
+  text-align: center;
+  color:$blue-base;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: 25% 73%;
+  grid-template-rows: auto auto auto auto 20rem;
+  column-gap: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+.form-field:nth-child(1), .form-field:nth-child(2), .form-field:nth-child(5), .form-field:nth-child(6){
+  grid-column: 1/3;
+  //grid-row: 1/2;
+}
+
+.form-field label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.1rem;
+  border-radius: 0.7rem;
+}
+
+.form-field textarea{
+  height: 15rem;
+}
+
+
+//Footer section
+.footer {
+  background-color: $green;
+  margin: 0;
+  height: 10rem;
+  color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - MOBILE
+@media (min-width: 0px) and (max-width: 767px) {
+ //GENERAL
+ .btn-info {
   width: 90%;
 }
 
-//Footer section
-footer {
-  background-image: radial-gradient(
-    circle at 107.92% 90.56%,
-    #00dbe9 81.25%,
-    #00d7f5 87.5%,
-    #00d3ff 93.75%,
-    #00d0ff 100%
-  );
-}
+  //UTILIDADES
+  .w-sm-100 {
+    width: 100%;
+  }
 
-//RESPONSIVE DESIGN - MOBILE
-@media (min-width: 0px) and (max-width: 767px) {
+//MAIN MENU
   .main-nav {
     flex-direction: column;
   }
@@ -293,7 +364,7 @@ footer {
     text-align: center;
     font-size: 1.8rem;
   }
-
+   //HERO
   .content-hero {
     position: absolute;
     background-color: rgba($blue-base, 0.4);
@@ -303,10 +374,8 @@ footer {
     bottom: 0;
     color: white;
   }
-  .btn-info {
-    width: 90%;
-  }
-
+  
+  //SERVICES
   .serv-row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -45,13 +45,13 @@
         <section class="col services-section shadow">
           <h3 class="tit3">Frontend</h3>
           <div class="icons">
-            <img
-              src="/imgs/icons8-location/icons8-figma-96.png"
-              alt=""
-            />
+            <img src="/imgs/icons8-location/icons8-figma-96.png" alt="" />
           </div>
           <p>
-            I have used frameworks like <span class="enfasis">Bootstrap</span>, <span class="enfasis">Bulma</span> and <span class="enfasis">Saas</span> for different projects along my professional path.
+            I have used frameworks like <span class="enfasis">Bootstrap</span>,
+            <span class="enfasis">Bulma</span> and
+            <span class="enfasis">Saas</span> for different projects along my
+            professional path.
           </p>
         </section>
         <section class="col services-section shadow">
@@ -63,20 +63,21 @@
             />
           </div>
           <p>
-            I like to work with <span class="enfasis">phpMyadmin</span>, <span class="enfasis">MySQL</span> and <span class="enfasis">SQL databases</span> but I have worked with NoSQL in <span class="enfasis">MongoDB</span>.
-            I have experience testing APIs with <span class="enfasis">Postman</span>.
+            I like to work with <span class="enfasis">phpMyadmin</span>,
+            <span class="enfasis">MySQL</span> and
+            <span class="enfasis">SQL databases</span> but I have worked with
+            NoSQL in <span class="enfasis">MongoDB</span>. I have experience
+            testing APIs with <span class="enfasis">Postman</span>.
           </p>
         </section>
         <section class="col services-section shadow">
           <h3 class="tit3">Project management</h3>
           <div class="icons">
-            <img
-              src="/imgs/icons8-location/icons8-hierarchy-96.png"
-              alt=""
-            />
+            <img src="/imgs/icons8-location/icons8-hierarchy-96.png" alt="" />
           </div>
           <p>
-            The gathering of requeriments and redaction of user stories were part of this role besides <span class="enfasis">QA tasks</span>.
+            The gathering of requeriments and redaction of user stories were
+            part of this role besides <span class="enfasis">QA tasks</span>.
           </p>
         </section>
       </section>
@@ -87,47 +88,57 @@
       <form action="">
         <fieldset>
           <legend>Fill all the fields below to contact me</legend>
-          <div>
-            <label for="contact_names">Name(s)</label>
+          <div class="form-fields">
+            <div class="form-field">
+              <label for="contact_names">Name(s)</label>
+              <input
+                type="text"
+                placeholder="Name"
+                class="input-text"
+                id="contact_name"
+                name="contact_name"
+              />
+            </div>
+              <div class="form-field">
+              <label for="contact_lastName">Last name</label>
+              <input
+                type="text"
+                placeholder="Last name"
+                class="input-text"
+                id="contact_lastName"
+                name="contact_lastName"
+              />
+            </div>
+            <div class="form-field">
+              <label for="cext_tel">Ext.</label>
+                <input type="text" name="ext_tel" id="ext_tel" class="input-text"/>
+            </div>
+            <div class="form-field">
+              <label for="contact_tel">Telephone</label>
+                <input type="text" name="contact_tel" id="contact_tel" class="input-text"/>
+            </div>
+            <div class="form-field">
+              <label for="contact_email">Email</label>
+              <input type="email" placeholder="example@mail.com.mx" id="contact_email" class="input-text"/>
+            </div>
+            <div class="form-field">
+              <label for="contact_message">Message</label>
+              <textarea name="contact_message" id="contact_message" class="input-text"></textarea>
+            </div>
+          </div>
+          <div class="aling-right flex">
             <input
-              type="text"
-              placeholder="Name"
-              id="contact_name"
-              name="contact_name"
-            />
-            <label for="contact_lastName">Last name</label>
-            <input
-              type="text"
-              placeholder="Last name"
-              id="contact_lastName"
-              name="contact_lastName"
-            />
-          </div>
-          <div>
-            <label for="contact_ext">Extension</label>
-            <!--input type="number"-->
-            <label for="contact_tel">Telephone</label>
-            <input type="number" name="contact_tel" id="contact_tel" />
-          </div>
-          <div>
-            <label for="contact_email">Email</label>
-            <input type="email" placeholder="example@mail.com.mx" />
-          </div>
-          <div>
-            <label for="contact_message">Message</label>
-            <textarea name="contact_message" id="contact_message"></textarea>
-          </div>
-          <input
             type="submit"
             name="contact_send"
             id="contact_send"
             value="Enviar"
-            class="btn-info"
+            class="btn-info w-sm-100"
           />
+          </div>
         </fieldset>
       </form>
     </section>
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. Nathaly Dimas</p>
     </footer>
 
