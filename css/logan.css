@@ -20,22 +20,6 @@ body {
   width: 100%;
 }
 
-.btn-info {
-  background-color: #1c106b;
-  color: white;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 1rem 2rem;
-  font-family: "Nunito Sans", serif;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.btn-info:hover {
-  background-color: #09a3e0;
-  cursor: pointer;
-}
-
 .shadow {
   -webkit-box-shadow: 0px 5px 15px 0px #999399;
   box-shadow: 0px 5px 15px 0px #999399;
@@ -48,7 +32,7 @@ h3 {
 
 .tit2 {
   font-family: "Poppins", sans-serif;
-  color: #1c106b;
+  color: #150a5b;
 }
 
 .tit3 {
@@ -57,7 +41,7 @@ h3 {
 }
 
 .enfasis {
-  color: #d65db1;
+  color: #1a55d6;
   font-weight: 700;
 }
 
@@ -77,35 +61,49 @@ h3 {
           justify-content: flex-end;
 }
 
-.title-main {
-  font-size: 6em;
-  font-family: "Qwitcher Grypen", cursive;
-  background-color: white;
-  color: gray;
-  text-align: center;
-  padding: 1%;
-  margin: 1% 0% 0.2% 0%;
-  line-height: 0.7em;
+#content-resume1 {
+  background-color: #f9f9f9f9;
+  font-family: "Open Sans", "sans-serif";
+  padding: 2rem 2rem;
+  margin: 0;
+  max-width: 1200rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#career {
-  font-size: 1.5em;
-  font-family: "Nunito Sans", serif;
-  display: block;
-  background-color: white;
-  color: gray;
-  text-align: center;
-  padding: 0.1%;
-  margin: 0% 0% 1% 0%;
+header {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0% auto;
+.resume1-nav-bg {
+  background-image: radial-gradient(circle at 103.92% 90.56%, #1739c0 81.25%, #0c62ec 93.75%, #1a55d6 100%);
+  border-bottom: 0.2rem solid #03d6f7;
+  width: 130rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 1em;
+  left: 5em;
 }
 
-.main-nav {
-  border-bottom-color: #ff6f91;
+.resume1-main-nav {
+  border-bottom-color: #3e64ee;
   font-family: "Open Sans", "sans-serif";
   font-weight: 300;
   display: -webkit-box;
@@ -116,14 +114,9 @@ h3 {
           justify-content: space-between;
 }
 
-.nav-bg {
-  background-image: radial-gradient(circle at 107.92% 90.56%, #00dfdc 81.25%, #00e4d0 93.75%, #09d9e0 100%);
-  border-bottom: 0.5rem solid #ffffb5;
-}
-
-.main-nav a {
+.resume1-main-nav a {
   color: white;
-  padding: 1rem 1rem;
+  padding: 0.5rem 6rem;
   font-family: "Open Sans", "sans-serif";
   text-decoration: none;
   -webkit-transition: 0.3s;
@@ -131,119 +124,82 @@ h3 {
   font-size: 1.8rem;
 }
 
-.main-nav a:hover {
+.resume1-main-nav a:hover {
   color: white;
-  padding: 1rem 1rem;
-  background-color: #ff9671;
+  padding: 0.5rem 6rem;
+  background-color: #0c62ec;
 }
 
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  color: white;
-  padding: 1rem 1rem;
+#content-resumebody {
+  margin-top: 12.5rem;
+  background-color: #f9f9f9f9;
   font-family: "Open Sans", "sans-serif";
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-size: 1.8rem;
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  margin: 0;
-  /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  color: white;
-  padding: 1rem 1rem;
-  background-color: #ff9671;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  color: #ff9671;
-  background-color: #ffffb5;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.hero {
-  background-image: url("../imgs/desk2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 52rem;
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
+  width: 150rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.resume-personalInfo {
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #1c106b;
-  position: relative;
+  background-color: white;
+  position: fixed;
+  top: 10.5em;
+  left: 5em;
+  border-radius: 1.5rem;
 }
 
-/* THIS ADD THE EFFECT TO THE MAIN IMAGE (HOME) - DARKER/SHADOW MODE
-.content-hero {
-  position: absolute;
-  background-color:rgba(28, 16, 107, 0.03);
-  top: 0%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-*/
-.hero #subtitle-main {
-  font-family: "Nunito Sans", serif;
-  font-weight: 500;
-  width: 48rem;
-  font-size: 2.8rem;
-  margin: 5rem auto;
+.profile-picture {
+  max-width: 19rem;
+  max-height: 19rem;
+  position: fixed;
+  top: 5em;
+  left: 9em;
+  border-radius: 3.5rem;
 }
 
-.hero #subtitle-main span {
-  display: block;
+.title-resume {
+  font-size: 6em;
+  font-family: "Qwitcher Grypen", cursive;
+  background-color: white;
+  color: gray;
+  text-align: center;
+  line-height: 0.7em;
+  margin: 0.2em 2em;
+}
+
+.resume-CompleteInfo {
+  width: 69%;
+  background-color: white;
+  margin-right: 7rem;
+  padding: 5em;
+  border-radius: 1.5rem;
 }
 
 #my-services {
-  background-color: #e9f1fb;
+  background-color: #f9f9f9f9;
   font-family: "Open Sans", "sans-serif";
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   margin: 0;
-  max-width: 1200em;
+  max-width: 100%;
   height: 45em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,14 +248,14 @@ h3 {
 .services-section:hover {
   border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
   border-style: solid;
-  border-color: #ff9671;
+  border-color: orange;
 }
 
 .services-section h3 {
-  background-image: radial-gradient(circle at 107.92% 90.56%, #00dfdc 81.25%, #00e4d0 93.75%, #09d9e0 100%);
+  background-image: radial-gradient(circle at 107.92% 90.56%, green 81.25%, #008062 93.75%, #00aaff 100%);
   color: white;
-  -webkit-box-shadow: 5px 5px #ff9671;
-          box-shadow: 5px 5px #ff9671;
+  -webkit-box-shadow: 5px 5px orange;
+          box-shadow: 5px 5px orange;
   font-family: "Nunito Sans", serif;
   width: 100%;
 }
@@ -307,7 +263,8 @@ h3 {
 .services-section .icons {
   height: 15rem;
   width: 15rem;
-  background-color: #f1f3f8be;
+  border-color: #1739c0;
+  border: solid 1px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +278,7 @@ h3 {
 }
 
 #contact {
-  background-color: #e9f1fb;
+  background-color: #f9f9f9f9;
   font-family: "Open Sans", "sans-serif";
   max-width: 1200em;
   padding: 2rem 10rem;
@@ -329,7 +286,7 @@ h3 {
 }
 
 #contact form {
-  background-color: #96dbe6;
+  background-color: #00aaff;
   border-radius: 0.5rem;
   width: Min(60rem, 100%);
   margin: 0 auto;
@@ -345,7 +302,7 @@ h3 {
 
 #contact form legend {
   text-align: center;
-  color: #1c106b;
+  color: #150a5b;
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -391,7 +348,7 @@ h3 {
 }
 
 .footer {
-  background-color: #00e4d0;
+  background-color: green;
   margin: 0;
   height: 7rem;
   color: white;
@@ -413,7 +370,7 @@ h3 {
   .w-sm-100 {
     width: 100%;
   }
-  .main-nav {
+  .resume1-main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -426,7 +383,7 @@ h3 {
   }
   .content-hero {
     position: absolute;
-    background-color: rgba(28, 16, 107, 0.4);
+    background-color: rgba(21, 10, 91, 0.4);
     top: 0%;
     left: 0;
     right: 0;
@@ -443,4 +400,4 @@ h3 {
         grid-template-rows: repeat(3, 1fr);
   }
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=logan.css.map */

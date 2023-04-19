@@ -8,31 +8,19 @@ $qwitcher: "Qwitcher Grypen", cursive;
 $poppins: "Poppins", sans-serif;
 
 //Color vars - primary
-$green: #00e4d0;
-$yellow-base: #ffffb5;
-$orange-base: #ff9671;
-$blue-base: #1c106b;
-$purple-base: #c192ea;
-$pink-base: #d65db1;
-$background: #e9f1fb;
-$grey-base: #f1f3f8be;
-//Color vars - secondary
-$secondary-pink1: #ff6f91;
-$secondary-blue1: #96dbe6;
-$tertiary-blue-hover: #09d9e0;
-$tertiary-blue: #09cee0;
-$tertiary-blue2: #09a3e0;
+$blue1: #150a5b;
+$blue2: #210f93;
+$blue3: #1739c0;
+$blue4: #0c62ec;
+$blue5: #3e64ee;
+$blue6: #1a55d6;
+$blue7: #19589d;
+$blue8: #0e97ca;
+$blue9: #03d6f7;
+$background: #f9f9f9f9;
 
-$secondary-green: #00dfdc;
-
-@mixin background($imgpath, $size, $position: 0 -25px, $repeat: no-repeat) {
-  background: {
-    image: url($imgpath);
-    position: $position;
-    repeat: $repeat;
-    size: $size;
-  }
-}
+//sizes
+$maxWidthsize: 80rem;
 
 html {
   font-size: 62.5%;
@@ -54,22 +42,6 @@ body {
   width: 100%;
 }
 
-.btn-info {
-  background-color: $blue-base;
-  color: white;
-  border: 0;
-  border-radius: 0.4rem;
-  padding: 1rem 2rem;
-  font-family: $nunito-sans;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.btn-info:hover {
-  background-color: $tertiary-blue2;
-  cursor: pointer;
-}
-
 .shadow {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
   -moz-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
@@ -84,7 +56,7 @@ h3 {
 
 .tit2 {
   font-family: $poppins;
-  color: $blue-base;
+  color: $blue1;
 }
 
 .tit3 {
@@ -93,7 +65,7 @@ h3 {
 }
 
 .enfasis {
-  color: $pink-base;
+  color: $blue6;
   font-weight: 700;
 }
 
@@ -110,171 +82,132 @@ h3 {
   justify-content: flex-end;
 }
 
+  //Content resume
+  #content-resume1 {
+    background-color: $background;
+    font-family: $open-sans;
+    padding: 2rem 2rem;
+    margin: 0;
+    max-width: 1200rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+
+  
 //Main nav
-.title-main {
-  font-size: 6em;
-  font-family: $qwitcher;
-  background-color: white;
-  color: gray;
-  text-align: center;
-  padding: 1%;
-  margin: 1% 0% 0.2% 0%;
-  line-height: 0.7em;
+header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
-#career {
-  font-size: 1.5em;
-  font-family: $nunito-sans;
-  display: block;
-  background-color: white;
-  color: gray;
-  text-align: center;
-  padding: 0.1%;
-  margin: 0% 0% 1% 0%;
+.resume1-nav-bg {
+  background-image: radial-gradient(
+    circle at 103.92% 90.56%,
+    $blue3 81.25%,
+    $blue4 93.75%,
+    $blue6 100%
+  );
+  border-bottom: 0.2rem solid $blue9;
+  width: 130rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 1em;
+  left: 5em;
 }
-
-.container {
-  max-width: 120rem;
-  margin: 0% auto;
-}
-.main-nav {
-  border-bottom-color: $secondary-pink1;
+.resume1-main-nav {
+  border-bottom-color: $blue5;
   font-family: $open-sans;
   font-weight: 300;
   display: flex;
   justify-content: space-between;
-}
-
-.nav-bg {
-  background-image: radial-gradient(
-    circle at 107.92% 90.56%,
-    $secondary-green 81.25%,
-    $green 93.75%,
-    $tertiary-blue-hover 100%
-  );
-  border-bottom: 0.5rem solid $yellow-base;
-}
-
-.main-nav a {
-  color: white;
-  padding: 1rem 1rem;
-  font-family: $open-sans;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 1.8rem;
-}
-
-.main-nav a:hover {
-  color: white;
-  padding: 1rem 1rem;
-  background-color: $orange-base;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  color: white;
-  padding: 1rem 1rem;
-  font-family: $open-sans;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 1.8rem;
-
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  color: white;
-  padding: 1rem 1rem;
-  background-color: $orange-base;
-}
-
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  color: $orange-base;
-  background-color: $yellow-base;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-//HERO section
-.hero {
-  background-image: url("../imgs/desk2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 52rem;
-  padding: 4rem 0rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  color: $blue-base;
-  position: relative;
   
 }
 
-/* THIS ADD THE EFFECT TO THE MAIN IMAGE (HOME) - DARKER/SHADOW MODE
-.content-hero {
-  position: absolute;
-  background-color:rgba(28, 16, 107, 0.03);
-  top: 0%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-*/
-.hero #subtitle-main {
-  font-family: $nunito-sans;
-  font-weight: 500;
-  width: 48rem;
-  font-size: 2.8rem;
-  margin: 5rem auto;
-}
-.hero #subtitle-main span {
-  display: block;
+.resume1-main-nav a {
+  color: white;
+  padding: 0.5rem 6rem;
+  font-family: $open-sans;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.8rem;
 }
 
-//MY SERVICES section
+.resume1-main-nav a:hover {
+  color: white;
+  padding: 0.5rem 6rem;
+  background-color: $blue4;
+}
+
+
+
+
+
+
+//body resume content
+#content-resumebody {
+  margin-top: 12.5rem;
+  background-color: $background;
+  font-family: $open-sans;
+  padding: 2rem 0rem;
+  width: 150rem;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-end;
+}
+//personal info resume
+  .resume-personalInfo {
+    width:  30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 10.5em;
+    left: 5em;
+    border-radius: 1.5rem;
+  }
+
+.profile-picture{
+  max-width: 19rem;
+  max-height: 19rem;
+  position: fixed;
+  top: 5em;
+  left: 9em;
+  border-radius: 3.5rem;
+}
+  .title-resume {
+    font-size: 6em;
+    font-family: $qwitcher;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    line-height: 0.7em;
+    margin: 0.2em 2em;
+  }
+
+  //complete info next profile
+  .resume-CompleteInfo {
+    width: 69%;
+    background-color: white;
+    margin-right: 7rem;
+    //margin-left: 43rem;
+    padding: 5em;
+    border-radius: 1.5rem;
+  }
+
+  
+
+  //MY SERVICES section
 #my-services {
   background-color: $background;
   font-family: $open-sans;
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
   margin: 0;
-  max-width: 1200em;
+  max-width: 100%;
   height: 45em;
   display: flex;
   flex-direction: column;
@@ -305,18 +238,18 @@ h3 {
 .services-section:hover {
   border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
   border-style: solid;
-  border-color: $orange-base;
+  border-color: orange;
 }
 
 .services-section h3 {
   background-image: radial-gradient(
     circle at 107.92% 90.56%,
-    $secondary-green 81.25%,
-    $green 93.75%,
-    $tertiary-blue-hover 100%
+    green 81.25%,
+    rgb(0, 128, 98) 93.75%,
+    rgb(0, 170, 255) 100%
   );
   color: white;
-  box-shadow: 5px 5px $orange-base;
+  box-shadow: 5px 5px orange;
   font-family: $nunito-sans;
   width: 100%;
 }
@@ -324,7 +257,8 @@ h3 {
 .services-section .icons {
   height: 15rem;
   width: 15rem;
-  background-color: $grey-base;
+  border-color: $blue3;
+  border: solid 1px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -341,7 +275,7 @@ h3 {
 }
 
 #contact form {
-  background-color: $secondary-blue1;
+  background-color: rgb(0, 170, 255);
   border-radius: 0.5rem;
   width: Min(60rem, 100%); //use the lowest value
   margin: 0 auto;
@@ -357,7 +291,7 @@ h3 {
 
 #contact form legend {
   text-align: center;
-  color:$blue-base;
+  color:$blue1;
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -399,7 +333,7 @@ h3 {
 
 //Footer section
 .footer {
-  background-color: $green;
+  background-color: green;
   margin: 0;
   height: 7rem;
   color: white;
@@ -424,7 +358,7 @@ h3 {
   }
 
 //MAIN MENU
-  .main-nav {
+  .resume1-main-nav {
     flex-direction: column;
   }
 
@@ -436,7 +370,7 @@ h3 {
    //HERO
   .content-hero {
     position: absolute;
-    background-color: rgba($blue-base, 0.4);
+    background-color: rgba($blue1, 0.4);
     top: 0%;
     left: 0;
     right: 0;
