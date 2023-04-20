@@ -25,7 +25,7 @@ body {
   box-shadow: 0px 5px 15px 0px #999399;
 }
 
-h2,
+h2, .tit1,
 h3 {
   text-transform: uppercase;
 }
@@ -38,12 +38,13 @@ h3 {
 }
 
 .separador {
-  border-bottom: 0.5rem solid #210f93;
+  border-bottom: 0.5rem solid #0e97ca;
   color: white;
   font-size: 0.2rem;
   width: 6rem;
   -webkit-transition: width 1s;
   transition: width 1s;
+  margin-bottom: 3rem;
 }
 
 .tit2 {
@@ -117,8 +118,157 @@ h3 {
           justify-content: flex-end;
 }
 
+.area {
+  background: #f9f9f9f9;
+  background: -webkit-linear-gradient(to left, #5a62eb, #262db9);
+  width: 100%;
+  height: 520rem;
+}
+
+.circles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(92, 152, 201, 0.445);
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 2%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 5%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 90%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
 #content-resume1 {
-  background-color: #f9f9f9f9;
   font-family: "Open Sans", "sans-serif";
   padding: 2rem 2rem;
   margin: 0;
@@ -136,6 +286,8 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 0vh;
 }
 
 header {
@@ -151,7 +303,7 @@ header {
 .resume1-nav-bg {
   background-image: radial-gradient(circle at 103.92% 90.56%, #1739c0 81.25%, #0c62ec 93.75%, #1a55d6 100%);
   border-bottom: 0.2rem solid #03d6f7;
-  width: 136rem;
+  width: 137rem;
   margin: 0 auto;
   position: fixed;
   top: 1em;
@@ -188,7 +340,6 @@ header {
 
 #content-resumebody {
   margin-top: 14rem;
-  background-color: #f9f9f9f9;
   font-family: "Open Sans", "sans-serif";
   padding: 2rem 0rem;
   width: 150rem;
@@ -352,10 +503,9 @@ header {
 }
 
 .resume-CompleteInfo {
-  width: 69%;
+  width: 68%;
   background-color: white;
-  margin-right: 7rem;
-  padding: 5rem 5rem;
+  margin-right: 8rem;
   border-radius: 1.5rem;
   box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
   -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
@@ -366,38 +516,26 @@ header {
   width: 50%;
 }
 
-#my-services {
-  background-color: #f9f9f9f9;
-  font-family: "Open Sans", "sans-serif";
-  padding: 2rem 5rem;
-  margin: 0;
-  max-width: 100%;
-  height: 45em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#resume1-about {
+  padding: 5rem 5rem;
 }
 
-.serv-row {
+#resume1-skills {
+  width: 100%;
+  background-color: #f9f9f9f9;
+  padding: 5rem 5rem;
+}
+
+.skill-row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
 }
 
-.services-section {
+.skill-section {
   background-color: white;
   margin: 1rem;
   grid-column: auto;
@@ -415,28 +553,20 @@ header {
           align-items: center;
   padding: 1rem 2rem;
   text-align: center;
+  box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+  -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+  -moz-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
 }
 
-.services-section:hover {
-  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
-  border-style: solid;
-  border-color: #03d6f7;
-}
-
-.services-section h3 {
-  background-image: radial-gradient(circle at 107.92% 90.56%, #210f93 81.25%, #1739c0 93.75%, #03d6f7 100%);
-  color: white;
-  -webkit-box-shadow: 5px 5px #03d6f7;
-          box-shadow: 5px 5px #03d6f7;
+.skill-section h3 {
+  color: #19589d;
   font-family: "Nunito Sans", serif;
   width: 100%;
 }
 
-.services-section .icons {
-  height: 15rem;
-  width: 15rem;
-  border-color: #1739c0;
-  border: solid 1px;
+.skill-section .icons {
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,11 +579,21 @@ header {
           justify-content: center;
 }
 
-#contact {
-  background-color: #f9f9f9f9;
+.skills-list {
+  text-align: left;
+  list-style-type: none;
+}
+
+.skills-list li img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+#resume1-experience {
   font-family: "Open Sans", "sans-serif";
   max-width: 1200em;
-  padding: 2rem 10rem;
+  padding: 5rem 5rem;
   height: 45em;
 }
 
@@ -520,6 +660,78 @@ header {
 .form-field textarea {
   height: 15rem;
   resize: none;
+}
+
+#resume1-portfolio {
+  padding: 5rem 5rem;
+}
+
+.serv-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.services-section {
+  background-color: white;
+  margin: 1rem;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: #03d6f7;
+}
+
+.services-section h3 {
+  background-image: radial-gradient(circle at 107.92% 90.56%, #210f93 81.25%, #1739c0 93.75%, #03d6f7 100%);
+  color: white;
+  -webkit-box-shadow: 5px 5px #03d6f7;
+          box-shadow: 5px 5px #03d6f7;
+  font-family: "Nunito Sans", serif;
+  width: 100%;
+}
+
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  border: solid 1px #19589d;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#resume1-education {
+  padding: 5rem 5rem;
+}
+
+#resume1-references {
+  padding: 5rem 5rem;
 }
 
 .footer {
