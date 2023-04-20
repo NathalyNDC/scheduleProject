@@ -30,6 +30,22 @@ h3 {
   text-transform: uppercase;
 }
 
+.tit1 {
+  font-family: "Poppins", sans-serif;
+  color: #150a5b;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.separador {
+  border-bottom: 0.5rem solid #210f93;
+  color: white;
+  font-size: 0.2rem;
+  width: 6rem;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
 .tit2 {
   font-family: "Poppins", sans-serif;
   color: #150a5b;
@@ -43,6 +59,46 @@ h3 {
 .enfasis {
   color: #1a55d6;
   font-weight: 700;
+}
+
+.btn {
+  height: 4rem;
+  width: 80%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-color: #210f93;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1a55d6), to(#1a55d6));
+  background-image: linear-gradient(to right, #1a55d6 0%, #1a55d6 100%);
+  font-family: "Poppins", sans-serif;
+  box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+}
+
+.btn:hover {
+  height: 4rem;
+  width: 80%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-color: #210f93;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1739c0), to(#1739c0));
+  background-image: linear-gradient(to right, #1739c0 0%, #1739c0 100%);
+  font-family: "Poppins", sans-serif;
+  box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
 }
 
 .w-sm-100 {
@@ -95,7 +151,7 @@ header {
 .resume1-nav-bg {
   background-image: radial-gradient(circle at 103.92% 90.56%, #1739c0 81.25%, #0c62ec 93.75%, #1a55d6 100%);
   border-bottom: 0.2rem solid #03d6f7;
-  width: 130rem;
+  width: 136rem;
   margin: 0 auto;
   position: fixed;
   top: 1em;
@@ -203,6 +259,7 @@ header {
 
 .resumeIcons-contact {
   margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .svgIcon {
@@ -223,7 +280,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: start;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
@@ -233,22 +290,42 @@ header {
   color: black;
 }
 
+#loc {
+  margin-bottom: 2rem;
+}
+
 #locationIcon {
   max-width: 2rem;
   max-height: 2rem;
-  margin: 0rem 0rem;
+  margin-right: 0.5rem;
+}
+
+#em {
+  margin-bottom: 1rem;
 }
 
 #emailIcon {
   max-width: 2rem;
   max-height: 2rem;
-  margin: 0rem 0rem;
+  margin-right: 0.2rem;
+}
+
+#cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 #cellIcon {
   max-width: 3rem;
   max-height: 3rem;
-  margin: 0rem 0rem;
 }
 
 #cellL {
@@ -256,21 +333,37 @@ header {
   max-height: 7.5rem;
 }
 
+#rem {
+  margin-bottom: 2rem;
+}
+
 #remoteIcon {
-  max-width: 2rem;
-  max-height: 2rem;
-  margin: 0rem 0rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-right: 0.3rem;
+}
+
+#downloadIcon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin: 0rem 1rem;
+  -webkit-filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+          filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
 }
 
 .resume-CompleteInfo {
   width: 69%;
   background-color: white;
   margin-right: 7rem;
-  padding: 5em;
+  padding: 5rem 5rem;
   border-radius: 1.5rem;
   box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
   -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
   -moz-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+}
+
+#resume1-about:hover .separador {
+  width: 50%;
 }
 
 #my-services {
@@ -327,14 +420,14 @@ header {
 .services-section:hover {
   border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
   border-style: solid;
-  border-color: orange;
+  border-color: #03d6f7;
 }
 
 .services-section h3 {
-  background-image: radial-gradient(circle at 107.92% 90.56%, green 81.25%, #008062 93.75%, #00aaff 100%);
+  background-image: radial-gradient(circle at 107.92% 90.56%, #210f93 81.25%, #1739c0 93.75%, #03d6f7 100%);
   color: white;
-  -webkit-box-shadow: 5px 5px orange;
-          box-shadow: 5px 5px orange;
+  -webkit-box-shadow: 5px 5px #03d6f7;
+          box-shadow: 5px 5px #03d6f7;
   font-family: "Nunito Sans", serif;
   width: 100%;
 }
