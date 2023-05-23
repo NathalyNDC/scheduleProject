@@ -60,6 +60,8 @@ body {
   font-weight: 300;
   width: 100%;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .shadow {
@@ -470,7 +472,7 @@ header {
 .resume1-pinfo2 button a {
   color: white;
 }
-//complete info next profile
+//complete info next to profile
 .resume-CompleteInfo {
   width: 68%;
   background-color: white;
@@ -554,7 +556,7 @@ header {
 //EXPERIENCE section
 #resume1-experience {
   font-family: $open-sans;
-  max-width: 1200em;
+ max-width: 100%;
   padding: 5rem 5rem;
 }
 #resume1-experience:hover {
@@ -575,6 +577,7 @@ header {
 	flex-direction: column;
 	margin: $margin auto;
   height: 90%;
+  width: 100%;
 
 	&__event {
 		margin-bottom: $spacing;
@@ -942,48 +945,191 @@ header {
 
 ////////////////////////////////////////////////////////////////////
 //RESPONSIVE DESIGN - MOBILE
-@media (min-width: 0px) and (max-width: 767px) {
-  //GENERAL
-  .btn-info {
-    width: 90%;
-  }
+@media (min-width: 320px) and (max-width: 480px) {
 
-  //UTILIDADES
-  .w-sm-100 {
-    width: 100%;
-  }
 
-  //MAIN MENU
-  .resume1-main-nav {
-    flex-direction: column;
-  }
 
-  .main-nav a {
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  //HERO
-  .content-hero {
-    position: absolute;
-    background-color: rgba($blue1, 0.4);
-    top: 0%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: white;
-  }
-
-  //SERVICES
-  .serv-row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    grid-template-rows: repeat(3, 1fr);
-    //grid-template-rows: repeat(1, 1fr);
-  }
+  
 }
 
-//RESPONSIVE DESIGN - TABLET AND PC
-@media (min-width: 768px) and (max-width: 3000px) {
+
+///////////////////////////////////////////////////////////////
+/// //RESPONSIVE DESIGN - TABLET AND iPAD
+ @media (min-width: 481px) and (max-width: 768px) {
+
+ }
+
+
+
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - BIG screen
+@media (min-width: 1800px) and (max-width: 2700px) {
+
+  //Content resume
+#content-resume1 {
+  max-width: 100%;
+  
+}
+  //Main nav
+header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.resume1-nav-bg {
+  width: 80%;
+  left: 10%;
+}
+/*
+.resume1-main-nav a {
+  font-size: 22px;
+}*/
+
+//body resume content
+#content-resumebody {
+
+  padding: 2rem 0rem;
+  width: 85%;
+  justify-content: center;
+  padding-left: 15%;
+  
+}
+//personal info resume
+.resume-personalInfo {
+  width: 30rem;
+
+  position: fixed;
+ 
+  left: 15%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+.profile-picture {
+  position: fixed;
+  left: 17%;
+}
+.title-resume {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: $anuphan;
+  color: gray;
+  text-align: center;
+  line-height: 0.9em;
+  margin-top: 4em;
+  margin-bottom: 3rem;
+}
+.lastNameMc {
+  color: $blue1;
+  font-weight: bold;
+}
+#career {
+  background-color: $background;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.resumeIcons-contact {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.svgIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0rem 1rem;
+  filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+}
+
+.resume1-pinfo2 {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 3rem 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.resume1-pinfo2 a {
+  text-decoration: none;
+  color: black;
+}
+// .resume1-pinfo2 span {
+//  margin: 1rem 0;
+//}
+#loc {
+  margin-bottom: 2rem;
+}
+#locationIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-right: 0.5rem;
+}
+#em {
+  margin-bottom: 1rem;
+}
+#emailIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-right: 0.2rem;
+}
+#cell {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#cellIcon {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+#cellL{
+  max-width: 15rem;
+  max-height: 7.5rem;
+}
+#rem{
+  margin-bottom: 2rem;
+}
+#remoteIcon {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-right: 0.3rem;
+}
+#downloadIcon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin: 0rem 1rem;
+  filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+}
+.resume1-pinfo2 button a {
+  color: white;
+}
+
+//complete info next to profile
+.resume-CompleteInfo {
+  width: 75%;
+  background-color: white;
+  margin-right: 0%;
+  margin-left: 1%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+#resume1-about:hover {
+  .separador {
+    width: 50%;
+  }
+}
+#resume1-about {
+  padding: 5rem 5rem;
+}
+
+
+
+//SKILLS section
+
+
+
+
+
 }

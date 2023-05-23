@@ -19,6 +19,12 @@ body {
   font-weight: 300;
   width: 100%;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .shadow {
@@ -604,7 +610,7 @@ header {
 
 #resume1-experience {
   font-family: "Open Sans", "sans-serif";
-  max-width: 1200em;
+  max-width: 100%;
   padding: 5rem 5rem;
 }
 
@@ -631,6 +637,7 @@ header {
           flex-direction: column;
   margin: 20px auto;
   height: 90%;
+  width: 100%;
 }
 
 #resume1-experience .timeline__event {
@@ -1052,41 +1059,165 @@ header {
   font-weight: 400;
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
-  .btn-info {
-    width: 90%;
+@media (min-width: 1800px) and (max-width: 2700px) {
+  #content-resume1 {
+    max-width: 100%;
   }
-  .w-sm-100 {
+  header {
     width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .resume1-main-nav {
+  .resume1-nav-bg {
+    width: 80%;
+    left: 10%;
+  }
+  /*
+.resume1-main-nav a {
+  font-size: 22px;
+}*/
+  #content-resumebody {
+    padding: 2rem 0rem;
+    width: 85%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 15%;
+  }
+  .resume-personalInfo {
+    width: 30rem;
+    position: fixed;
+    left: 15%;
+    border-radius: 1.5rem;
+    box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+    -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+    -moz-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+  }
+  .profile-picture {
+    position: fixed;
+    left: 17%;
+  }
+  .title-resume {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Anuphan", sans-serif;
+    color: gray;
+    text-align: center;
+    line-height: 0.9em;
+    margin-top: 4em;
+    margin-bottom: 3rem;
+  }
+  .lastNameMc {
+    color: #150a5b;
+    font-weight: bold;
+  }
+  #career {
+    background-color: #f9f9f9f9;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .resumeIcons-contact {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .svgIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 0rem 1rem;
+    -webkit-filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+            filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+  }
+  .resume1-pinfo2 {
+    background-color: #f9f9f9f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: start;
+    padding: 3rem 2rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
   }
-  .main-nav a {
-    display: block;
-    text-align: center;
-    font-size: 1.8rem;
+  .resume1-pinfo2 a {
+    text-decoration: none;
+    color: black;
   }
-  .content-hero {
-    position: absolute;
-    background-color: rgba(21, 10, 91, 0.4);
-    top: 0%;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  #loc {
+    margin-bottom: 2rem;
+  }
+  #locationIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.5rem;
+  }
+  #em {
+    margin-bottom: 1rem;
+  }
+  #emailIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.2rem;
+  }
+  #cell {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  #cellIcon {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+  #cellL {
+    max-width: 15rem;
+    max-height: 7.5rem;
+  }
+  #rem {
+    margin-bottom: 2rem;
+  }
+  #remoteIcon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-right: 0.3rem;
+  }
+  #downloadIcon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin: 0rem 1rem;
+    -webkit-filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+            filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+  }
+  .resume1-pinfo2 button a {
     color: white;
   }
-  .serv-row {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+  .resume-CompleteInfo {
+    width: 75%;
+    background-color: white;
+    margin-right: 0%;
+    margin-left: 1%;
+    border-radius: 1.5rem;
+    box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+    -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+    -moz-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+  }
+  #resume1-about:hover .separador {
+    width: 50%;
+  }
+  #resume1-about {
+    padding: 5rem 5rem;
   }
 }
 /*# sourceMappingURL=logan.css.map */
