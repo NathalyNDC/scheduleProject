@@ -1110,19 +1110,12 @@ header {
   width: 75%;
   background-color: white;
   margin-right: 0%;
-  margin-left: 1%;
+  margin-left: 4%;
   border-radius: 1.5rem;
   @include shadowContainer();
 }
 
-#resume1-about:hover {
-  .separador {
-    width: 50%;
-  }
-}
-#resume1-about {
-  padding: 5rem 5rem;
-}
+
 
 
 
