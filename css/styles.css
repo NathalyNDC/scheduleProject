@@ -37,8 +37,8 @@ body {
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 5px 15px 0px #999399;
-  box-shadow: 0px 5px 15px 0px #999399;
+  -webkit-box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
+  box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
 }
 
 h2,
@@ -156,8 +156,7 @@ h3 {
   outline: none;
   padding: 14px 16px;
   background-color: inherit;
-  margin: 0;
-  /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
@@ -261,10 +260,8 @@ h3 {
 }
 
 .serv-row {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -307,7 +304,7 @@ h3 {
 .services-section .icons {
   height: 15rem;
   width: 15rem;
-  background-color: #f1f3f8be;
+  background-color: rgba(241, 243, 248, 0.7450980392);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,7 +328,7 @@ h3 {
 #contact form {
   background-color: #96dbe6;
   border-radius: 0.5rem;
-  width: Min(60rem, 100%);
+  width: min(60rem, 100%);
   margin: 0 auto;
   padding: 2rem;
   color: white;
@@ -353,13 +350,11 @@ h3 {
 }
 
 .form-fields {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 73%;
-      grid-template-columns: 25% 73%;
-  -ms-grid-rows: auto auto auto auto 20rem;
-      grid-template-rows: auto auto auto auto 20rem;
+  grid-template-columns: 25% 73%;
+  grid-template-rows: auto auto auto auto 20rem;
   -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
           column-gap: 1rem;
 }
 
@@ -368,8 +363,6 @@ h3 {
 }
 
 .form-field:nth-child(1), .form-field:nth-child(2), .form-field:nth-child(5), .form-field:nth-child(6) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
@@ -434,13 +427,9 @@ h3 {
     color: white;
   }
   .serv-row {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

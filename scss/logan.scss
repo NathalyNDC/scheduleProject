@@ -989,7 +989,7 @@ header {
     left: 0;
     top: 50px;
     width: 200px;
-    height: calc(740px-50px);
+    height: calc(333px);
     background-image: radial-gradient(
       circle at 103.92% 90.56%,
       $blue3 81.25%,
@@ -1012,7 +1012,7 @@ header {
   }
   
   .resume1-main-nav a:hover {
-    transform: translateX(10%);
+    transform: translateX(0%);
   }
   #lb-btn-nav {
     display: flex;
@@ -1024,7 +1024,7 @@ header {
   }
 
   .btn-nav{
-    position: absolute;
+    position:absolute;
     left: 0;
     top: 0;
     cursor: pointer;
@@ -1064,7 +1064,7 @@ header {
     text-align: center;
     justify-content: center;
     background-color: white;
-    position: relative;
+    position: static;
     top: 0em;
     left: 0em;
     border-radius: 0.8rem;
@@ -1120,11 +1120,9 @@ header {
     padding: 3rem 2rem;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
+    font-size: 93%;
   }
-  .resume1-pinfo2 a {
-    text-decoration: none;
-    color: black;
-  }
+
   // .resume1-pinfo2 span {
   //  margin: 1rem 0;
   //}
@@ -1202,7 +1200,9 @@ header {
  #resume1-skills .tit1{
   padding: 0 3rem;
  }
-
+ #resume1-skills .separador{
+  margin: 1rem 0rem 3rem 3rem;
+}
  .skill-row {
    display: flex;
    flex-direction: column;
@@ -1252,7 +1252,76 @@ header {
    margin-right: 1rem;
  }
 
+//work Experience looks fine
 
+
+//PORTFOLIO MOBILE
+#resume1-portfolio {
+  padding: 0rem 0rem;
+  background-color: $background;
+}
+
+#resume1-portfolio h1{
+  padding: 1rem 0rem 0rem 5rem;
+}
+ #resume1-portfolio .separador{
+  margin: 1rem 0rem 2rem 5rem;
+}
+.serv-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.services-section {
+  background-color: white;
+  margin: 1rem;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  
+}
+
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: $blue9;
+}
+
+.services-section h3 {
+  color: $blue7;
+  font-family: $nunito-sans;
+  width: 100%;
+}
+
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(231, 231, 243, 0.418);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//EDUCATION
+
+#educContent  {
+  flex-direction: column;
+}
+
+#educ-degree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
 
   
 }
@@ -1260,9 +1329,9 @@ header {
 
 ///////////////////////////////////////////////////////////////
 /// //RESPONSIVE DESIGN - TABLET AND iPAD
- @media (min-width: 481px) and (max-width: 768px) {
+ //@media (min-width: 481px) and (max-width: 768px) {
 
- }
+ //}
 
 
 
