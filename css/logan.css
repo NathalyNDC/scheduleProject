@@ -313,11 +313,10 @@ header {
 .resume1-nav-bg {
   background-image: radial-gradient(circle at 103.92% 90.56%, #1739c0 81.25%, #0c62ec 93.75%, #1a55d6 100%);
   border-bottom: 0.2rem solid #03d6f7;
-  width: 137rem;
+  width: 90%;
   margin: 0 auto;
-  position: fixed;
+  position: relative;
   top: 1em;
-  left: 5em;
 }
 
 .resume1-main-nav {
@@ -349,23 +348,23 @@ header {
 }
 
 #content-resumebody {
-  margin-top: 14rem;
+  margin-top: 11rem;
   font-family: "Open Sans", "sans-serif";
   padding: 2rem 0rem;
-  width: 150rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .resume-personalInfo {
-  width: 30rem;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +379,7 @@ header {
   background-color: white;
   position: fixed;
   top: 11.5em;
-  left: 5em;
+  left: 5%;
   border-radius: 1.5rem;
   box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
   -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
@@ -388,22 +387,21 @@ header {
 }
 
 .profile-picture {
-  max-width: 19rem;
-  max-height: 19rem;
-  position: fixed;
-  top: 5em;
-  left: 8.4em;
+  max-width: 65%;
+  max-height: 65%;
+  position: relative;
+  top: -5em;
   border-radius: 3.5rem;
 }
 
 .title-resume {
-  font-size: 2em;
+  font-size: 190%;
   font-weight: 500;
   font-family: "Anuphan", sans-serif;
   color: gray;
   text-align: center;
   line-height: 0.9em;
-  margin-top: 4em;
+  margin-top: -2em;
   margin-bottom: 3rem;
 }
 
@@ -444,19 +442,21 @@ header {
   padding: 3rem 2rem;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
+  font-size: 90%;
 }
 
 .resume1-pinfo2 a {
   text-decoration: none;
   color: black;
+  font-size: 90%;
 }
 
 #loc {
-  margin-bottom: 2rem;
+  margin-bottom: 10%;
 }
 
 #locationIcon {
-  max-width: 2rem;
+  max-width: 10%;
   max-height: 2rem;
   margin-right: 0.5rem;
 }
@@ -466,7 +466,7 @@ header {
 }
 
 #emailIcon {
-  max-width: 2rem;
+  max-width: 10%;
   max-height: 2rem;
   margin-right: 0.2rem;
 }
@@ -485,12 +485,12 @@ header {
 }
 
 #cellIcon {
-  max-width: 3rem;
+  max-width: 8%;
   max-height: 3rem;
 }
 
 #cellL {
-  max-width: 15rem;
+  max-width: 70%;
   max-height: 7.5rem;
 }
 
@@ -499,7 +499,7 @@ header {
 }
 
 #remoteIcon {
-  max-width: 2.5rem;
+  max-width: 12%;
   max-height: 2.5rem;
   margin-right: 0.3rem;
 }
@@ -519,7 +519,8 @@ header {
 .resume-CompleteInfo {
   width: 68%;
   background-color: white;
-  margin-right: 8rem;
+  margin-right: 4%;
+  margin-left: 29%;
   border-radius: 1.5rem;
   box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
   -webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
