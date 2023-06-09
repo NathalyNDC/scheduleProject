@@ -315,8 +315,9 @@ header {
   border-bottom: 0.2rem solid #03d6f7;
   width: 90%;
   margin: 0 auto;
-  position: relative;
-  top: 0.5em;
+  position: fixed;
+  top: 1em;
+  left: 5%;
 }
 
 .resume1-main-nav {
