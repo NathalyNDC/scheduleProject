@@ -126,7 +126,7 @@ h3 {
   background: rgba(249, 249, 249, 0.9764705882);
   background: -webkit-linear-gradient(to left, #5a62eb, #262db9);
   width: 100%;
-  height: 530rem;
+  height: 460rem;
 }
 
 .circles {
@@ -316,7 +316,7 @@ header {
   width: 90%;
   margin: 0 auto;
   position: relative;
-  top: 1em;
+  top: 0.5em;
 }
 
 .resume1-main-nav {
@@ -348,7 +348,7 @@ header {
 }
 
 #content-resumebody {
-  margin-top: 11rem;
+  margin-top: 8.5rem;
   font-family: "Open Sans", "sans-serif";
   padding: 2rem 0rem;
   width: 100%;
@@ -378,7 +378,7 @@ header {
           justify-content: center;
   background-color: white;
   position: fixed;
-  top: 11.5em;
+  top: 10em;
   left: 5%;
   border-radius: 1.5rem;
   box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
@@ -387,8 +387,8 @@ header {
 }
 
 .profile-picture {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 61%;
+  max-height: 61%;
   position: relative;
   top: -5em;
   border-radius: 3.5rem;

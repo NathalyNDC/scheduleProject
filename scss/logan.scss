@@ -159,7 +159,7 @@ h3 {
   background: $background;  
   background: -webkit-linear-gradient(to left, #5a62eb, #262db9);  
   width: 100%;
-  height:530rem;
+  height:460rem;
   
 }
 
@@ -324,7 +324,7 @@ header {
   width: 90%;
   margin: 0 auto;
   position:relative;
-  top: 1em;
+  top: .5em;
   
 }
 .resume1-main-nav {
@@ -352,7 +352,7 @@ header {
 
 //body resume content
 #content-resumebody {
-  margin-top: 11rem;
+  margin-top: 8.5rem;
   font-family: $open-sans;
   padding: 2rem 0rem;
   width: 100%;
@@ -369,15 +369,15 @@ header {
   justify-content: center;
   background-color: white;
   position: fixed;
-  top: 11.5em;
+  top: 10em;
   left: 5%;
   border-radius: 1.5rem;
   @include shadowContainer();
 }
 
 .profile-picture {
-  max-width: 65%;
-  max-height: 65%;
+  max-width: 61%;
+  max-height: 61%;
   position:relative;
   top: -5em;
   border-radius: 3.5rem;
