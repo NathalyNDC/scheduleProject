@@ -349,7 +349,7 @@ header {
 }
 
 #content-resumebody {
-  margin-top: 8.5rem;
+  margin-top: 12rem;
   font-family: "Open Sans", "sans-serif";
   padding: 2rem 0rem;
   width: 100%;
@@ -388,22 +388,21 @@ header {
 }
 
 .profile-picture {
-  max-width: 61%;
-  max-height: 61%;
+  max-width: 57%;
+  max-height: 57%;
   position: relative;
   top: -5em;
   border-radius: 3.5rem;
 }
 
 .title-resume {
-  font-size: 190%;
+  font-size: 170%;
   font-weight: 500;
   font-family: "Anuphan", sans-serif;
   color: gray;
   text-align: center;
-  line-height: 0.9em;
-  margin-top: -2em;
-  margin-bottom: 3rem;
+  margin-top: -7rem;
+  margin-bottom: 1rem;
 }
 
 .lastNameMc {
@@ -414,12 +413,12 @@ header {
 #career {
   background-color: rgba(249, 249, 249, 0.9764705882);
   border-radius: 1rem;
-  padding: 0.5rem 1.5rem;
+  padding: 1% 1.5rem;
 }
 
 .resumeIcons-contact {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 7%;
+  margin-bottom: 5%;
 }
 
 .svgIcon {
@@ -440,10 +439,10 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: start;
-  padding: 3rem 2rem;
+  padding: 7% 7%;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
-  font-size: 90%;
+  font-size: 100%;
 }
 
 .resume1-pinfo2 a {
@@ -453,7 +452,7 @@ header {
 }
 
 #loc {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 
 #locationIcon {
@@ -463,12 +462,12 @@ header {
 }
 
 #em {
-  margin-bottom: 1rem;
+  margin-bottom: 1%;
 }
 
 #emailIcon {
   max-width: 10%;
-  max-height: 2rem;
+  max-height: 1.6rem;
   margin-right: 0.2rem;
 }
 
@@ -482,26 +481,26 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0%;
 }
 
 #cellIcon {
   max-width: 8%;
-  max-height: 3rem;
+  max-height: 2.8rem;
 }
 
 #cellL {
   max-width: 70%;
-  max-height: 7.5rem;
+  max-height: 5rem;
 }
 
 #rem {
-  margin-bottom: 2rem;
+  margin-bottom: 10%;
 }
 
 #remoteIcon {
   max-width: 12%;
-  max-height: 2.5rem;
+  max-height: 2rem;
   margin-right: 0.3rem;
 }
 
