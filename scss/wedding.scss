@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bentham&family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+//Color vars - primary
+$blue1: #150a5b;
+$blue2: #210f93;
+$blue3: #1739c0;
+$blue4: #0c62ec;
+$blue5: #3e64ee;
+$blue6: #1a55d6;
+$blue7: #19589d;
+$blue8: #0e97ca;
+$blue9: #03d6f7;
+$background: #f9f9f9f9;
+// Font Variables
+$open-sans: "Open Sans", "sans-serif";
+$poppins: "Poppins", sans-serif;
+
+$monsieur: "Monsieur La Doulaise", cursive;
+$raleway: "Raleway", sans-serif;
+$bentham: "Bentham", serif;
+$fleur: "Fleur De Leah", cursive;
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+  box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+}
+@mixin shadowContainer() {
+  //write CSS code here
+  -webkit-box-shadow: 5px 7px 23px -3px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 5px 7px 23px -3px rgba(0, 0, 0, 0.59);
+  box-shadow: 5px 7px 23px -3px rgba(0, 0, 0, 0.59);
+}
+
+//TYPO
+h2,
+.tit1,
+h3 {
+  text-transform: uppercase;
+}
+
+.tit1 {
+  font-family: $poppins;
+  color: $blue1;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.btn {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  border-color: $blue2;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: linear-gradient(to right, $blue6 0%, $blue6 100%);
+
+  font-family: $poppins;
+  box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+}
+.btn:hover {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  border-color: $blue2;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: linear-gradient(to right, $blue3 0%, $blue3 100%);
+  font-family: $poppins;
+  box-shadow: -22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -2px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: 22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+}
+
+body {
+  font-weight: 300;
+  max-width: 1200rem;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.containerBody {
+  width: 1200rem;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: $background;
+}
+
+//body resume content
+#body-invitation1 {
+  margin-top: 2rem;
+  margin-bottom: 8.5rem;
+  width: 52%;
+  height: 63rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/imgs/wedding/geometricflowers.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  //background-size: cover;
+  background-size: 100% 100%;
+  @include shadowContainer();
+}
+
+#body-invitation2 {
+  margin-top: 12rem;
+  font-family: $open-sans;
+  padding: 2rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.invitation-normal-text {
+  font-size: 57%;
+  line-height: 206%;
+  letter-spacing: 0.25em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: $bentham;
+  margin-left: 0.25em;
+}
+
+.names {
+  font-size: 114%;
+  line-height: 170%;
+  letter-spacing: 0.32em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 0.32em;
+}
+
+.and {
+  font-size: 1.7rem;
+  line-height: 1rem;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: $monsieur;
+  margin-left: 0em;
+}
+
+.reception {
+  font-size: 137%;
+  line-height: 140%;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+ // font-family: $monsieur;
+  font-family: $fleur;
+  margin-left: 0em;
+}
+
+//personal info resume
+.resume-personalInfo {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  top: 10em;
+  left: 5%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
