@@ -182,7 +182,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
   font-family: "Bentham", serif;
 }
 
@@ -275,14 +275,66 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 1rem 0;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
 #branch {
-  display: block;
-  margin: 0% auto;
-  width: 12%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  width: 30%;
+  margin: 0 auto;
+}
+
+.asistencia form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  font-size: 87%;
+  line-height: 206%;
+  letter-spacing: 0.25em;
+  color: rgb(0, 0, 0);
+  font-family: "Bentham", serif;
+  margin-left: 0.25em;
+}
+
+#name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#name-field {
+  border: #a18905 solid 0.02rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#confirmation input {
+  color: #a18905;
+}
+
+#adevertencia {
+  font-size: 65%;
+  line-height: 190%;
+  letter-spacing: 0.25em;
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=wedding.css.map */
