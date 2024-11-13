@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
+  box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
+}
+
+h2,
+.tit1,
+h3 {
+  text-transform: uppercase;
+}
+
+.tit1 {
+  color: #150a5b;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.btn {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-color: #210f93;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1a55d6), to(#1a55d6));
+  background-image: linear-gradient(to right, #1a55d6 0%, #1a55d6 100%);
+  font-family: "Poppins", sans-serif;
+  box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+}
+
+.btn:hover {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-color: #210f93;
+  border-width: 0.1rem;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1739c0), to(#1739c0));
+  background-image: linear-gradient(to right, #1739c0 0%, #1739c0 100%);
+  font-family: "Poppins", sans-serif;
+  box-shadow: -22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -webkit-box-shadow: -2px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  -moz-box-shadow: 22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+}
+
+body {
+  font-weight: 300;
+  max-width: 1200rem;
+  height: 100%;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+@media (min-width: 290px) and (max-width: 1200px) {
+  .containerBody {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+  }
+  #body-invitation1 {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .invitation-normal-text {
+    font-size: 2rem;
+    letter-spacing: 0.25em;
+    text-align: center;
+    margin-left: 0.25em;
+  }
+  #flower1 {
+    height: 60rem;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  #flower2 {
+    height: 60rem;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    margin-top: 5rem;
+  }
+  #welcome {
+    margin: 0rem 0;
+    padding: 6rem 0rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #welcome-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px black;
+    background-color: #f5f2f7;
+    -webkit-box-shadow: 5px 0px 33px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 0px 33px -12px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 38rem;
+  }
+  .invitation-title-text {
+    font-size: 2.2rem;
+    letter-spacing: 0.25em;
+    text-align: center;
+    margin-left: 0.25em;
+  }
+  .names {
+    font-size: 3.3rem;
+    line-height: 120%;
+    letter-spacing: 0.32em;
+    text-align: center;
+    margin-left: 0.32em;
+    font-family: "Open Sans", "sans-serif";
+    color: #5b3d7a;
+  }
+  .and {
+    font-size: 5rem;
+    line-height: 0rem;
+    letter-spacing: 0em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Monsieur La Doulaise", cursive;
+    margin-left: 0em;
+  }
+  #date {
+    margin: 2rem 0 3rem 0;
+  }
+  #LyN {
+    height: 40rem;
+  }
+  #ceremonia {
+    margin-bottom: 4rem;
+  }
+  #party {
+    margin-bottom: 12rem;
+  }
+  .place-info {
+    margin: 4rem 0;
+  }
+  .icon-wed {
+    height: 3rem;
+  }
+  .reception {
+    font-size: 3rem;
+    line-height: 140%;
+    letter-spacing: 0em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: "Fleur De Leah", cursive;
+    margin-left: 0em;
+  }
+  #asistencia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 7rem 2rem;
+    width: 80%;
+    padding: 1%;
+    background-color: white;
+    position: static;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.21);
+  }
+  .gold-elegant {
+    color: #a18905;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    letter-spacing: -0.085rem;
+  }
+  .asistencia-text {
+    letter-spacing: 0.13em;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .text-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  #branch {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .asistencia form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    font-size: 87%;
+    line-height: 206%;
+    letter-spacing: 0.25em;
+    color: rgb(0, 0, 0);
+    font-family: "Bentham", serif;
+    margin-left: 0.25em;
+  }
+  #name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #name-field {
+    border: #a18905 solid 0.02rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  #confirmation input {
+    color: #a18905;
+  }
+  #adevertencia {
+    font-size: 65%;
+    line-height: 190%;
+    letter-spacing: 0.25em;
+    margin-top: 1.5rem;
+  }
+}/*# sourceMappingURL=wedding-1.css.map */

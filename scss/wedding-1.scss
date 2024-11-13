@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bentham&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 //iniciales
 @import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
@@ -9,22 +10,15 @@
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
-  line-height: 2.1rem;
-  letter-spacing: -0.2em;
 }
 
 //&
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 .playfair-display {
   font-family: "Playfair Display", serif;
- // font-optical-sizing: auto;
-  font-weight: 100;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
-  font-size: 2.7rem;
-  margin-left: 13px;
-  margin-right: 10px;
-  line-height: 3rem;
 }
 
 //text
@@ -34,34 +28,6 @@
   font-family: "Tangerine", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
-  line-height: 2.1rem;
-}
-
-.pinyon{
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 2.1rem;
-}
-
-.namesDemo {
-  display: flex;
-  justify-content: center;
-  
-}
-
-.sectDemo{
-  margin: 200px 0;
-}
-
-#test1 {
-    width: 40%;
-    margin: 0 auto;
-    position: fixed;
-  top: 30px;
-  right: 360px;
 }
 
 //Color vars - primary
@@ -75,14 +41,19 @@ $blue7: #19589d;
 $blue8: #0e97ca;
 $blue9: #03d6f7;
 $background: #f9f9f9f9;
+
+$lila1: #f5f2f7;
+$lila5:#5b3d7a;
 // Font Variables
 $open-sans: "Open Sans", "sans-serif";
 $poppins: "Poppins", sans-serif;
-
 $monsieur: "Monsieur La Doulaise", cursive;
 $raleway: "Raleway", sans-serif;
 $bentham: "Bentham", serif;
 $fleur: "Fleur De Leah", cursive;
+
+$nunito: "Nunito Sans", sans-serif;
+
 
 .shadow {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
@@ -104,7 +75,7 @@ h3 {
 }
 
 .tit1 {
-  font-family: $poppins;
+  //font-family: $poppins;
   color: $blue1;
   font-size: 3rem;
   margin: 0;
@@ -152,66 +123,105 @@ body {
   margin: 0;
 }
 
-.containerBody {
-  width: 1200rem;
-  margin: 0;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: $background;
-}
 
-//body resume content
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - MOBILE
+@media (min-width: 290px) and (max-width: 1200px) {
+  .containerBody {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+  }
+  
 #body-invitation1 {
-  margin: 2rem 0;
-  width: 52%;
-  height: 63rem;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url("/imgs/wedding/geometricflowers.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  //background-image: url("../imgs/wedding/geometricflowers.jpg");
+  //background-position: center; /* Center the image */
+  //background-repeat: no-repeat; /* Do not repeat the image */
   //background-size: cover;
-  background-size: 100% 100%;
-  @include shadowContainer();
+  //background-size: 100% 100%;
+  //@include shadowContainer();
+  font-family: $nunito;
+}
+.invitation-normal-text {
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin-left: 0.25em;
+}
+#flower1{
+  height: 60rem;
+  transform: scaleX(-1);
+ //margin-bottom: 5rem;
 }
 
-#body-invitation2 {
-  margin-top: 12rem;
-  font-family: $open-sans;
-  padding: 2rem 0rem;
+#flower2{
+  height: 60rem;
+  transform: scaleX(-1);
+  transform: rotate(180deg);
+  margin-top: 5rem;
+}
+#welcome {
+  margin: 0rem 0;
+  padding: 6rem 0rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  //background-color: pink;
 }
-.invitation-normal-text {
-  font-size: 57%;
-  line-height: 206%;
+
+#welcome-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px black;
+  background-color: $lila1;
+  -webkit-box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+  position: absolute;
+  top: 38rem;
+
+}
+
+.invitation-title-text {
+  font-size: 2.2rem;
   letter-spacing: 0.25em;
-  color: rgb(0, 0, 0);
   text-align: center;
-  font-family: $bentham;
   margin-left: 0.25em;
 }
 
 .names {
-  font-size: 114%;
-  line-height: 170%;
+  font-size: 3.3rem;
+  line-height: 120%;
   letter-spacing: 0.32em;
-  color: rgb(0, 0, 0);
   text-align: center;
   margin-left: 0.32em;
+  font-family: $open-sans;
+  color: $lila5;
+
 }
 
 .and {
-  font-size: 1.7rem;
-  line-height: 1rem;
+  font-size: 5rem;
+  line-height: 0rem;
   letter-spacing: 0em;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -219,62 +229,60 @@ body {
   margin-left: 0em;
 }
 
+#date {
+  margin: 2rem 0 3rem 0;
+}
+#LyN{
+  height: 40rem;
+}
+
+#ceremonia{
+margin-bottom: 4rem;
+}
+
+#party{
+  margin-bottom: 12rem;
+  }
+
+.place-info{
+  margin: 4rem 0;
+}
+
+.icon-wed {
+  height: 3rem;
+}
+
 .reception {
-  font-size: 137%;
+  font-size: 3rem;
   line-height: 140%;
   letter-spacing: 0em;
   color: rgb(0, 0, 0);
   text-align: center;
- // font-family: $monsieur;
   font-family: $fleur;
   margin-left: 0em;
 }
 
 
-.anuncios {
-  //width: 20%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin: 5rem 0 2rem 0;
-  font-family: $bentham;
-  //background-color: white;
-  //position: fixed;
-  //top: 10em;
-  //left: 5%;
- // border-radius: 1.5rem;
-  //@include shadowContainer();
-}
 
-.anuncios section {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-}
-.anuncios section p {
-margin: 0 0.5%;
-}
 //---------------------------------------------------
-.asistencia {
+#asistencia {
   //width: 20%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin: 2rem 0;
-  width: 45%;
+  margin: 7rem 2rem;
+  width: 80%;
   padding: 1%;
   background-color: white;
-  //position: fixed;
+  position:static;
   //top: 10em;
   //left: 5%;
   //border-radius: 1.5rem;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
 -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
 box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
-font-family: $open-sans;
+//font-family: $open-sans;
 }
 
 .gold-elegant {
@@ -357,4 +365,6 @@ font-family: $open-sans;
   line-height: 190%;
   letter-spacing: 0.25em;
   margin-top: 1.5rem;
+}
+
 }

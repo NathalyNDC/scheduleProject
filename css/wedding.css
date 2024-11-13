@@ -2,6 +2,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bentham&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bentham&family=Fleur+De+Leah&family=Monsieur+La+Doulaise&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.2em;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2.7rem;
+  margin-left: 13px;
+  margin-right: 10px;
+  line-height: 3rem;
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 2.1rem;
+}
+
+.pinyon {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.namesDemo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sectDemo {
+  margin: 200px 0;
+}
+
+#test1 {
+  width: 40%;
+  margin: 0 auto;
+  position: fixed;
+  top: 30px;
+  right: 360px;
+}
+
 .shadow {
   -webkit-box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
   box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
