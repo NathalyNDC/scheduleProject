@@ -43,6 +43,8 @@ $blue9: #03d6f7;
 $background: #f9f9f9f9;
 
 $lila1: #f5f2f7;
+$lila2:#acbbfa;
+$lila3:#8f8ed1;
 $lila5:#5b3d7a;
 // Font Variables
 $open-sans: "Open Sans", "sans-serif";
@@ -56,9 +58,10 @@ $nunito: "Nunito Sans", sans-serif;
 
 
 .shadow {
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
-  -moz-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
-  box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+  -webkit-box-shadow: 1px -1px 14px -7px rgba(0,0,0,0.12);
+-moz-box-shadow: 1px -1px 14px -7px rgba(0,0,0,0.12);
+box-shadow: 1px -1px 14px -7px rgba(0,0,0,0.12);
+
 }
 @mixin shadowContainer() {
   //write CSS code here
@@ -76,7 +79,7 @@ h3 {
 
 .tit1 {
   //font-family: $poppins;
-  color: $blue1;
+ color: $blue1;
   font-size: 3rem;
   margin: 0;
 }
@@ -161,6 +164,7 @@ body {
   letter-spacing: 0.25em;
   text-align: center;
   margin-left: 0.25em;
+  color: black;
 }
 #flower1{
   height: 60rem;
@@ -172,11 +176,11 @@ body {
   height: 60rem;
   transform: scaleX(-1);
   transform: rotate(180deg);
-  margin-top: 5rem;
+  margin-top: 4.8rem;
 }
 #welcome {
-  margin: 0rem 0;
-  padding: 6rem 0rem;
+  margin: 6.2rem 0;
+  padding: 0rem 0rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -232,12 +236,145 @@ body {
 #date {
   margin: 2rem 0 3rem 0;
 }
-#LyN{
-  height: 40rem;
+//MAIN IMAGE AND COUNT DOWN
+#count-down{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content:center;
+  margin: 0 0 0rem 0;
+  
 }
 
-#ceremonia{
-margin-bottom: 4rem;
+#main-image{
+  height: 63rem;
+  width: 100%;
+ background-image: url("../imgs/wedding/LyN2.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  //background-size: 100% 104rem;
+  //@include shadowContainer();
+  font-family: $nunito;
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 2rem;
+}
+svg {
+  position: relative;
+  top: 6rem;
+  fill:$lila1;
+  transform: rotate(180deg);
+
+}
+/*#count-d{
+  background: $lila1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  height: 23rem;
+  padding: 0 0 4rem 0;
+  margin: 0 0 0rem 0;
+ position: relative;
+  top: -1rem;
+  
+}
+*/
+/*
+#circle{
+  padding: 0;
+  margin: 0;
+  height: 37rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-color: $background;
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+
+  background-image: url("../imgs/demo/p9.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+ // background-size: cover;
+  background-size: 117% 117%;
+
+}
+*/
+
+//GENERAL TITLES
+.title-1{
+  color: white;
+  background-color: $lila5;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  font-weight: 200;
+}
+.title-2{
+  color: $lila5;
+ font-family: $open-sans;
+ font-size: 3.5rem;
+ margin: 0;
+ font-weight: 200;
+}
+
+.btn-mobile {
+  height: 6rem;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border-color: $lila2;
+  border-width: 0.1rem;
+  border-radius: 6rem;
+  color: $lila5;
+  background-color: $lila2;
+  font-family: $open-sans;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0 0 3rem 0;
+}
+.btn-mobile:active {
+  height: 6rem;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border-color: $lila2;
+  border-width: 0.1rem;
+  border-radius: 6rem;
+  color: $lila5;
+  background-color: $lila2;
+  font-family: $open-sans;
+}
+
+.btn-mobile a {
+  font-family: $open-sans;
+  font-size: 3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $lila5;
+}
+
+//CEREMONIA
+.ceremonia{
+margin: 0 0 0rem 0;
+padding: 1rem 0 13rem 0;
+background-color: $lila1;
+width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content:center;
 }
 
 #party{
@@ -245,11 +382,12 @@ margin-bottom: 4rem;
   }
 
 .place-info{
-  margin: 4rem 0;
+  margin: 0rem 0;
 }
 
 .icon-wed {
-  height: 3rem;
+  height: 5rem;
+  filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
 }
 
 .reception {
