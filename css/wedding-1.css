@@ -399,7 +399,10 @@ body {
     font-size: 2.5rem;
     letter-spacing: 0em;
     text-align: center;
-    margin-left: 0.25em;
+    margin: 0;
+  }
+  .invitation-title-text p {
+    margin: 0;
   }
   .section-info {
     width: 70%;
@@ -409,8 +412,19 @@ body {
     margin-bottom: 6rem;
   }
   .icon-details {
-    height: 6rem;
-    margin: 3rem 0;
+    height: 34rem;
+    margin: 0rem 0;
+    -webkit-filter: none;
+            filter: none;
+  }
+  #headphones {
+    height: 22rem;
+  }
+  #letter {
+    height: 15rem;
+  }
+  #gift {
+    height: 18rem;
   }
   .btn-modal {
     margin: 3rem 0;
