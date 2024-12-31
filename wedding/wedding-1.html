@@ -92,7 +92,7 @@
                 <a
                   href="https://www.google.com/maps?sca_esv=ad3cebe3ffb4734a&rlz=1C1SQJL_esMX809MX809&sxsrf=ADLYWIJa6-uZkCCT7S54_TEVLQxLlFI-MA:1724118389910&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHBhcnJvcXVpYSBkZSBzYW4gbWlndWVsIGFyY8OhbmdlbCBjaGFybyBtaWNoSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KevAMFfgFi2EMVsOp6rGeGsu&daddr=Calle+Benito+Juarez+S/N,+San+Bartolo,+61300+Charo,+Mich.,+Mexico"
                 >
-                  Cómo llegar?
+                ¿Cómo llegar?
                 </a>
               </button>
             </section>
@@ -134,7 +134,7 @@
               <a
                 href="https://www.google.com/maps?sca_esv=ad3cebe3ffb4734a&rlz=1C1SQJL_esMX809MX809&sxsrf=ADLYWIJa6-uZkCCT7S54_TEVLQxLlFI-MA:1724118389910&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiLHBhcnJvcXVpYSBkZSBzYW4gbWlndWVsIGFyY8OhbmdlbCBjaGFybyBtaWNoSABQAFgAcAB4AJABAJgBAKABAKoBALgBDMgBAJgCAKACAJgDAJIHAKAHAA&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KevAMFfgFi2EMVsOp6rGeGsu&daddr=Calle+Benito+Juarez+S/N,+San+Bartolo,+61300+Charo,+Mich.,+Mexico"
               >
-                Cómo llegar?
+              ¿Cómo llegar?
               </a>
             </button>
           </section>
@@ -199,14 +199,39 @@
         </div>
   
         <div id="pictures" class="invitation-details-text ">
-          <h3 class="title-2">COMPARTIMOS ESTE DÍA JUNTO A TI</h3>
-          <p>Comparte tus fotos y videos de este hermoso día</p>
+          <h3 class="title-carousel">COMPARTIMOS ESTE DÍA JUNTO A TI</h3>
+          <p class="text-carousel">Comparte tus fotos y videos de este hermoso día</p>
+          <img
+                src="../imgs/wedding/add_a_photo_2.svg"
+                alt="camera"
+                class="icon-wed icon-wed-carousel-text"
+              />
           <section id="carrusel">
-            <image
-              src="../imgs/wedding/LyN3.jpg"
-              alt="music"
-              class="icon-wed icon-details"
-            />
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../imgs/wedding/LyN.jpg" >
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../imgs/wedding/LyN2.jpg" >
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../imgs/wedding/LyN3.jpg" >
+              </div>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              
           </section>
           <button class="btn-mobile btn-modal">Subir fotos</button>
         </div>
@@ -251,6 +276,7 @@
         </p>
       </div>
     </div>
+    <script src="../js/carousel.js"></script>
   </body>
 </html>
 <!--nginx-->
