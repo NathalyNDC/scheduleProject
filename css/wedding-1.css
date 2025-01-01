@@ -561,7 +561,7 @@ body {
   #confirmation {
     margin: 13rem 0 6rem 0;
     background-color: white;
-    width: 80%;
+    width: 90%;
   }
   #asistencia {
     display: -webkit-box;
@@ -688,6 +688,17 @@ body {
     letter-spacing: 0.25em;
     margin-top: 1.5rem;
   }
+  .separator-logo {
+    width: 100%;
+    padding: 0 0 0rem 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #logo-wed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -703,22 +714,26 @@ body {
     margin: 0rem 0 0rem 0;
     font-family: "Bentham", serif;
     background-color: white;
-    height: 63rem;
-    padding: 5rem 0;
+    height: 47rem;
+    padding: 0rem 0 0 0;
+    background-color: #f5f2f7;
   }
   #logo-wed section p {
     margin: 0 0;
   }
   .sectDemo {
     height: 100%;
+    background-color: #f5f2f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f5f2f7), color-stop(white), color-stop(60%), to(#f5f2f7));
+    background: linear-gradient(#f5f2f7, white, 60%, #f5f2f7);
   }
   #test1 {
-    width: 95%;
+    width: 67%;
     margin: 0 auto;
   }
   .secDemo-content {
     position: relative;
-    top: -35rem;
+    top: -28rem;
     right: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -742,22 +757,22 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 7rem;
+    font-size: 5.5rem;
   }
   .pinyon {
     font-family: "Pinyon Script", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 2.1rem;
   }
   .and {
     font-family: "Playfair Display", serif;
     font-style: normal;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    line-height: 10rem;
+    line-height: 8rem;
   }
   .initials {
     font-family: "Pinyon Script", cursive;

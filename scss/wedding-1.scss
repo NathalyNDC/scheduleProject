@@ -343,6 +343,7 @@ svg {
   background-color: $lila1;
 }
 
+
 #branch-sep{
   width: 65%;
   margin: 0 auto;
@@ -559,7 +560,7 @@ img {vertical-align: middle;}
 #confirmation{
   margin: 13rem 0 6rem 0;
   background-color: white;
-  width: 80%;
+  width: 90%;
 }
 
 
@@ -666,6 +667,14 @@ box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
   margin-top: 1.5rem;
 }
 //-------------------LOGO
+.separator-logo {
+  width: 100%;
+  padding: 0 0 0rem 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+ 
+}
 #logo-wed {
   //width: 20%;
   display: flex;
@@ -675,8 +684,9 @@ box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
   margin: 0rem 0 0rem 0;
   font-family: $bentham;
   background-color: white;
-  height: 63rem;
-  padding: 5rem 0;
+  height: 47rem;
+  padding: 0rem 0 0 0;
+  background-color: $lila1;
   //position: fixed;
   //top: 10em;
   //left: 5%;
@@ -692,16 +702,18 @@ margin: 0 0;
 
 .sectDemo{
   height: 100%;
+  background-color: $lila1;
+  background: linear-gradient($lila1, white, 60%, $lila1);
 }
 
 #test1 {
-  width: 95%;
+  width: 67%;
   margin: 0 auto;
   
 }
 .secDemo-content{
   position:relative;
-  top: -35rem;
+  top: -28rem;
   right: 0px;
   display: flex;
   flex-direction: column;
@@ -713,7 +725,7 @@ margin: 0 0;
 .namesDemo {
   display: flex;
   justify-content: center;
-  font-size: 7rem;
+  font-size: 5.5rem;
  
 }
 
@@ -722,7 +734,7 @@ margin: 0 0;
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 2.1rem;
 }
 
@@ -730,10 +742,10 @@ margin: 0 0;
 .and {
   font-family: "Playfair Display", serif;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 4rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  line-height: 10rem;
+  line-height: 8rem;
 }
 
 .initials {
