@@ -76,7 +76,9 @@
               />
               <h3 class="title-2">DIA</h3>
               <p>SÁBADO, 06 DE DICIEMBRE, 2025 - 1:00 P.M.</p>
-              <button class="btn-mobile">Save the Date</button>
+              <button class="btn-mobile"><a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Alice+and+Bob%27s+Weekly+Cocktail+Night&dates=20210301T190000Z/20210301T210000Z&details=%3Ch2%3EWe%27re+having+a+Zoom+party%20%3C/h2%3E%3Cul%3E%3Cli%3EVirtual%20backgrounds!%3C/li%3E%20%3Cli%3ESilly%20stories!%3C/li%3E%3Cli%3ESnacks!%3C/li%3E%20%3C/ul%3E%3Cp%3EYou%20can%20join%20it%20%20%3Ca%20href=%22https://example.com/some/link%22%3Ehere%3C/a%3E%3C/p%3E&location=https://example.com/some/link&recur=RRULE:FREQ=WEEKLY;UNTIL=20210601T000000Z">
+                  Save the Date
+              </a></button>
             </section>
             <section id="location" class="place-info">
               <i class="fa-solid fa-location-dot"></i>
@@ -174,9 +176,27 @@
               id="headphones"
             />
             <p>Qué canción no puede faltar en tu party playlist?</p>
-            <button class="btn-mobile btn-modal">Sugerir canción</button>
+            <button id="music-btn" class="btn-mobile btn-open-modal">Sugerir canción</button>
           </div>
-  
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <header class="header-m"> 
+      <span class="close">&times;</span>
+      <h2 class="title-2 title-details">Sugerir Canción</h2>
+    </header>
+    <div class="modal-container">
+      <input type="text" placeholder="Tu nombre">
+      <input type="text" placeholder="Nombre de canción y autor">
+      <input type="text" placeholder="Opcional: link de YouTube, Spotify, etc.">
+    </div>
+    <footer class="modal-footer">
+      <button id="music-suggest" class="btn-modal">Sugerir canción</button>
+    </footer>
+  </div>
+</div>
+
   
           <div id="dress=code" class="invitation-details-text  section-info">
             <h3 class="title-2">DRESS CODE</h3>
@@ -186,8 +206,28 @@
               class="icon-wed icon-details"
             />
             <p>Una orientación para tu vestuario</p>
-            <button class="btn-mobile btn-modal">Ver más</button>
+            <button id="btnDressCode" class="btn-mobile btn-open-modal">Ver más</button>
           </div>
+
+          <div id="myModal-dressCode" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <header class="header-m"> 
+                <span class="close">&times;</span>
+                <h2 class="title-2 title-details">DRESS CODE</h2>
+              </header>
+              <div class="modal-container">
+                <p>Vestimenta formal</p>
+                <p>Outfit ideas</p>
+                <input type="text" placeholder="Nombre de canción y autor">
+                <p>Madrinas/Padrinos colores</p>
+                <input type="text" placeholder="Nombre de canción y autor">
+              </div>
+              
+            </div>
+          </div>
+
+
   
         <div id="notes" class="invitation-details-text  section-info ">
           <h3 class="title-2">TIPS Y NOTAS</h3>
@@ -197,7 +237,7 @@
               class="icon-wed icon-details" id="letter"
             />
           <p>Información adicional para tener en cuenta</p>
-          <button class="btn-mobile btn-modal">+ Info</button>
+          <button class="btn-mobile btn-open-modal">+ Info</button>
         </div>
   
         <div id="gifts" class="invitation-details-text  section-info ">
@@ -208,7 +248,7 @@
               class="icon-wed icon-details" id="gift"
             />
           <p>Si deseas regalarnos algo más que tu hermosa presencia...</p>
-          <button class="btn-mobile btn-modal">Ver más</button>
+          <button class="btn-mobile btn-open-modal">Ver más</button>
         </div>
   
         <div id="pictures" class="invitation-details-text ">
@@ -246,7 +286,7 @@
               </div>
               
           </section>
-          <button class="btn-mobile btn-modal">Subir fotos</button>
+          <button class="btn-mobile btn-open-modal">Subir fotos</button>
         </div>
 <section id="conf" class="angled-gradient">
   <div id="confirmation" class="invitation-details-text shadow2">
@@ -259,7 +299,9 @@
           class="icon-wed icon-wed-carousel-text"
         />
 <div></div>
-    <button class="btn-mobile btn-modal btn-reply">Responder</button>
+    <button class="btn-mobile btn-reply"><a href="https://calendar.app.google/4CEj4cqenDPgn5We7">
+      Responder
+    </a></button>
   </div>
 </section>
          
