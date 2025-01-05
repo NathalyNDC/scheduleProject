@@ -623,17 +623,12 @@ font-size: 2.5rem;
 
 
 #confirm-assist {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
   margin-top: 4rem;
   max-width: 100%;
   padding: 0 5rem;
   font-size: 87%;
   line-height: 206%;
   letter-spacing: 0.20em;
-  color: rgb(0, 0, 0);
   
 }
 
@@ -650,7 +645,10 @@ font-size: 2.5rem;
 .opt-rad input{
   max-width: 2rem;
   margin: 0 2rem 0 0;
+  accent-color: $lila5;
 }
+
+
 
 
 #adevertencia {
