@@ -631,6 +631,9 @@ body {
     line-height: 206%;
     letter-spacing: 0.2em;
   }
+  #confirm-assist #name, #confirm-assist #quantity {
+    font-size: 1.9rem;
+  }
   #confirmation-radio {
     margin-top: 2rem;
   }
