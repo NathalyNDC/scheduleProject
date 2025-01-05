@@ -230,12 +230,21 @@ body {
 }
 
 .and {
-  font-size: 5rem;
-  line-height: 0rem;
+  font-size: 17rem;
+  line-height: 17rem;
   letter-spacing: 0em;
   color: rgb(0, 0, 0);
   text-align: center;
-  font-family: $monsieur;
+  margin-left: 0em;
+}
+
+.and p{
+  font-size: 5.5rem;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  //font-family: $monsieur;
   margin-left: 0em;
 }
 
@@ -439,6 +448,12 @@ width: 100%;
 #letter{
   height: 13rem;
 }
+
+
+#gifts{
+  display: none;
+}
+
 #gift{
   height: 13rem;
 }
@@ -550,12 +565,11 @@ img {vertical-align: middle;}
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
+
 .angled-gradient {
   background: linear-gradient(180deg, $lila1, white);
 }
-
 
 #confirmation{
   margin: 13rem 0 6rem 0;
@@ -563,60 +577,15 @@ img {vertical-align: middle;}
   width: 90%;
 }
 
-
-
-#asistencia {
-  //width: 20%;
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin: 7rem 2rem;
-  width: 80%;
-  padding: 1%;
-  background-color: white;
-  position:static;
-  //top: 10em;
-  //left: 5%;
-  //border-radius: 1.5rem;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
--moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
-//font-family: $open-sans;
+#myModal-Confirm{
+font-size: 2.5rem;
 }
-
-.gold-elegant {
-  color: #a18905;
-  font-family: $monsieur;
-  font-size: 5rem;
-  margin: 0 1rem;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: -0.085rem;
-}
-
-
-.asistencia-text {
-  letter-spacing: 0.13em;
-  font-size: 0.9rem;
-  margin: 0.5rem 0 0 0 ;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-
 .text-one{
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
-  margin-bottom: 2rem;
-  padding: 0;
+  width: 100%;
 }
 
 #branch {
@@ -624,48 +593,75 @@ box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.21);
   margin: 0 auto;
 }
 
-.asistencia form {
+.text-one p{
+  padding: 0.5rem 3rem;
+}
+
+#resp-text{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+#resp-text p{
+  margin: 0 1rem;
+}
+
+
+.asistencia-text {
+  letter-spacing: 0.13em;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.gold-elegant {
+  color: #a18905;
+  font-family: $monsieur;
+  font-size: 6rem;
+ line-height: 1rem;
+}
+
+
+#confirm-assist {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  margin-top: 4rem;
   max-width: 100%;
-  
-  
+  padding: 0 5rem;
   font-size: 87%;
   line-height: 206%;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.20em;
   color: rgb(0, 0, 0);
-  font-family: $bentham;
-  margin-left: 0.25em;
+  
 }
 
-#name {
+#confirmation-radio{
+  margin-top: 2rem;
+}
+
+.opt-rad{
+  margin: 5rem 0;
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
-  margin: 0 auto;
-  width: 100%;
 }
 
-#name-field {
-  border:  #a18905 solid 0.02rem;
-  border-radius: 0.5rem;
-  width: 90%;
-  margin: 0 auto;
+.opt-rad input{
+  max-width: 2rem;
+  margin: 0 2rem 0 0;
 }
 
-#confirmation input {
-  color:  #a18905;
-}
 
 #adevertencia {
-  font-size: 65%;
+  padding: 0 3rem;
+  font-size: 75%;
   line-height: 190%;
   letter-spacing: 0.25em;
-  margin-top: 1.5rem;
+  margin: 0rem 0 2rem 0;
 }
+
+
 //-------------------LOGO
 .separator-logo {
   width: 100%;
@@ -835,6 +831,30 @@ margin: 0 0;
   border-bottom: #000 solid 1px;
   font-family: $nunito;
   outline: none;
+}
+
+#list-notes {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.modal-container ul {
+  font-size: 2rem;
+  width: 75%;
+  padding: 0rem 1.5rem;
+  border: 0;
+  font-family: $nunito;
+  margin: 0;
+  
+}
+li{
+  list-style-position: square inside;
+ padding: 0 0 3rem 0;
+  
 }
 
 input:focus {

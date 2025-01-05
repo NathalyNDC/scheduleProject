@@ -217,12 +217,19 @@ body {
     color: #5b3d7a;
   }
   .and {
-    font-size: 5rem;
-    line-height: 0rem;
+    font-size: 17rem;
+    line-height: 17rem;
     letter-spacing: 0em;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: "Monsieur La Doulaise", cursive;
+    margin-left: 0em;
+  }
+  .and p {
+    font-size: 5.5rem;
+    line-height: 4rem;
+    letter-spacing: 0em;
+    color: rgb(0, 0, 0);
+    text-align: center;
     margin-left: 0em;
   }
   #date {
@@ -429,6 +436,9 @@ body {
   #letter {
     height: 13rem;
   }
+  #gifts {
+    display: none;
+  }
   #gift {
     height: 13rem;
   }
@@ -565,59 +575,8 @@ body {
     background-color: white;
     width: 90%;
   }
-  #asistencia {
-    display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 7rem 2rem;
-    width: 80%;
-    padding: 1%;
-    background-color: white;
-    position: static;
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.21);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.21);
-  }
-  .gold-elegant {
-    color: #a18905;
-    font-family: "Monsieur La Doulaise", cursive;
-    font-size: 5rem;
-    margin: 0 1rem;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    letter-spacing: -0.085rem;
-  }
-  .asistencia-text {
-    letter-spacing: 0.13em;
-    font-size: 0.9rem;
-    margin: 0.5rem 0 0 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #myModal-Confirm {
+    font-size: 2.5rem;
   }
   .text-one {
     display: -webkit-box;
@@ -631,14 +590,40 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 2rem;
-    padding: 0;
+    width: 100%;
   }
   #branch {
     width: 30%;
     margin: 0 auto;
   }
-  .asistencia form {
+  .text-one p {
+    padding: 0.5rem 3rem;
+  }
+  #resp-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  #resp-text p {
+    margin: 0 1rem;
+  }
+  .asistencia-text {
+    letter-spacing: 0.13em;
+    font-size: 2rem;
+    padding: 0;
+  }
+  .gold-elegant {
+    color: #a18905;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 6rem;
+    line-height: 1rem;
+  }
+  #confirm-assist {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -650,43 +635,36 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 4rem;
     max-width: 100%;
+    padding: 0 5rem;
     font-size: 87%;
     line-height: 206%;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.2em;
     color: rgb(0, 0, 0);
-    font-family: "Bentham", serif;
-    margin-left: 0.25em;
   }
-  #name {
+  #confirmation-radio {
+    margin-top: 2rem;
+  }
+  .opt-rad {
+    margin: 5rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 auto;
-    width: 100%;
   }
-  #name-field {
-    border: #a18905 solid 0.02rem;
-    border-radius: 0.5rem;
-    width: 90%;
-    margin: 0 auto;
-  }
-  #confirmation input {
-    color: #a18905;
+  .opt-rad input {
+    max-width: 2rem;
+    margin: 0 2rem 0 0;
   }
   #adevertencia {
-    font-size: 65%;
+    padding: 0 3rem;
+    font-size: 75%;
     line-height: 190%;
     letter-spacing: 0.25em;
-    margin-top: 1.5rem;
+    margin: 0rem 0 2rem 0;
   }
   .separator-logo {
     width: 100%;
@@ -857,6 +835,32 @@ body {
     border-bottom: #000 solid 1px;
     font-family: "Nunito Sans", sans-serif;
     outline: none;
+  }
+  #list-notes {
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-container ul {
+    font-size: 2rem;
+    width: 75%;
+    padding: 0rem 1.5rem;
+    border: 0;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+  }
+  li {
+    list-style-position: square inside;
+    padding: 0 0 3rem 0;
   }
   input:focus {
     border-bottom: #5b3d7a solid 0.2rem;

@@ -76,7 +76,7 @@
               />
               <h3 class="title-2">DIA</h3>
               <p>SÁBADO, 06 DE DICIEMBRE, 2025 - 1:00 P.M.</p>
-              <button class="btn-mobile"><a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Alice+and+Bob%27s+Weekly+Cocktail+Night&dates=20210301T190000Z/20210301T210000Z&details=%3Ch2%3EWe%27re+having+a+Zoom+party%20%3C/h2%3E%3Cul%3E%3Cli%3EVirtual%20backgrounds!%3C/li%3E%20%3Cli%3ESilly%20stories!%3C/li%3E%3Cli%3ESnacks!%3C/li%3E%20%3C/ul%3E%3Cp%3EYou%20can%20join%20it%20%20%3Ca%20href=%22https://example.com/some/link%22%3Ehere%3C/a%3E%3C/p%3E&location=https://example.com/some/link&recur=RRULE:FREQ=WEEKLY;UNTIL=20210601T000000Z">
+              <button class="btn-mobile"><a href="../wedding/event/event.ics">
                   Save the Date
               </a></button>
             </section>
@@ -132,7 +132,9 @@
             />
             <h3 class="title-2">DIA</h3>
             <p>SÁBADO, 06 DE DICIEMBRE, 2025 - 3:00 P.M.</p>
-            <button class="btn-mobile">Save the Date</button>
+            <button class="btn-mobile"><a href="../wedding/event/event.ics">
+              Save the Date
+          </a></button>
           </section>
           <section id="location" class="place-info">
             <i class="fa-solid fa-location-dot"></i>
@@ -217,11 +219,13 @@
                 <h2 class="title-2 title-details">DRESS CODE</h2>
               </header>
               <div class="modal-container">
-                <p>Vestimenta formal</p>
-                <p>Outfit ideas</p>
-                <input type="text" placeholder="Nombre de canción y autor">
+                <p>Outfit dress code: </p>
+                <img src="../imgs/wedding/dresscode.png" style="height: 26rem;">
                 <p>Madrinas/Padrinos colores</p>
-                <input type="text" placeholder="Nombre de canción y autor">
+                <p>Lavanda</p>
+                <img src="../imgs/wedding/colors.png" >
+                <img src="../imgs/wedding/madrinas.png" style="height: 20rem;">
+                <img src="../imgs/wedding/padrinos.png" style="height: 30rem; width:32rem">
               </div>
               
             </div>
@@ -237,8 +241,35 @@
               class="icon-wed icon-details" id="letter"
             />
           <p>Información adicional para tener en cuenta</p>
-          <button class="btn-mobile btn-open-modal">+ Info</button>
+          <button id="btnNotes" class="btn-mobile btn-open-modal">+ Info</button>
         </div>
+
+
+        <div id="myModal-notes" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <header class="header-m"> 
+              <span class="close">&times;</span>
+              <h2 class="title-2 title-details">TIPS Y NOTAS</h2>
+            </header>
+            <div class="modal-container">
+              <section id="list-notes">
+                <ul>
+                  <li><p>Por favor ser puntuales.</p></li>
+                  <li><p>Confirmar asistencia a la brevedad, antes de la fecha Septiebre 06, 2025</p></li>
+                  <li><p>Si no se confirma su asistencia su lugar será asignado a una persona de la lista de espera.</p></li>
+                  <li><p>Llevar abrigo ya que será en un espacios exterior.</p></li>
+                  <li><p>Olvidarse de todo, y !A disfrutar!!</p></li>
+                </ul>
+              </section>
+            </div>
+            
+          </div>
+        </div>
+
+
+
+
   
         <div id="gifts" class="invitation-details-text  section-info ">
           <h3 class="title-2">REGALOS</h3>
@@ -286,9 +317,15 @@
               </div>
               
           </section>
-          <button class="btn-mobile btn-open-modal">Subir fotos</button>
+          <button class="btn-mobile btn-open-modal">
+            <a href="https://nextcloud.analoggrog.com/s/Q84r34Nnzj9TiJP">
+              Subir fotos
+            </a>
+          </button>
         </div>
-<section id="conf" class="angled-gradient">
+
+
+        <section id="conf" class="angled-gradient">
   <div id="confirmation" class="invitation-details-text shadow2">
     <h3 class="title-carousel">CONFIRMACIÓN</h3>
     <img id="branch" src="/imgs/wedding/branch.png" />
@@ -299,54 +336,71 @@
           class="icon-wed icon-wed-carousel-text"
         />
 <div></div>
-    <button class="btn-mobile btn-reply"><a href="https://calendar.app.google/4CEj4cqenDPgn5We7">
+    <button id="btnConfirm" class="btn-mobile btn-reply">
       Responder
-    </a></button>
+    </button>
   </div>
 </section>
+
+
+  <!-- The Modal -->
+  <div id="myModal-Confirm" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <header class="header-m"> 
+        <span class="close">&times;</span>
+              <h2 class="title-2 title-details">CONFIRMACIÓN</h2>
+    <img id="branch" src="/imgs/wedding/branch.png" />
+    <section class="text-one">
+      <p>Nos acompañas en este día tan especial?</p>
+    </section>
+      </header>
+      <div class="modal-container">
+       <section id="resp-text">
+        <p class="asistencia-text">FAVOR DE</p>
+        <p class="gold-elegant">responder</p>
+        <p class="asistencia-text">ANTES DEL</p>
+       </section>
+       <p class="asistencia-text">06 DE SEPTIEMBRE, 2025</p>
+        <form id="confirm-assist">
+          <section id="name">
+            <input type="text" id="name-field" />
+            <label>NOMBRE COMPLETO</label>
+          </section>
+          <section id="quantity">
+            <input type="number" id="quantity-field" />
+            <label>NÚMERO DE PERSONAS</label>
+          </section>
+          <section id="confirmation-radio">
+            <section class="opt-rad">
+              <input type="radio" /><label>Confirma con alegría</label>
+            </section>
+           <section class="opt-rad">
+            <input type="radio" /><label>Lamentablemente declina</label>
+           </section>
+          </section>
+        </form>
+      </div>
+      <footer class="modal-footer">
+        <p id="adevertencia" class="asistencia-text">
+          SI NO SE CONFIRMA SU ASISTENCIA SU LUGAR SERÁ ASIGNADO A UNA PERSONA
+          EN LA LISTA DE ESPERA.
+        </p>
+        <button id="music-suggest" class="btn-modal">Confirmar</button>
+      </footer>
+    </div>
+  </div>
+
          
         </div>
 
 
-
-
-
-  
 
       <footer class="footer-1">
         TE ESPERAMOS!
       </footer>
 
 
-      <div id="asistencia">
-        <h1>Confirmación</h1>
-        <img id="branch" src="/imgs/wedding/branch.png" />
-        <section class="text-one">
-          
-          <p class="asistencia-text">FAVOR DE</p>
-          <p class="gold-elegant">responder</p>
-          <p class="asistencia-text">ANTES DEL 13 DE OCTUBRE, 2025</p>
-          <p>Nos acompañas en este día tan especial?</p>
-        </section>
-        <!--button>Asistencia</button-->
-
-        <div>
-          <form>
-            <section id="name">
-              <input type="text" id="name-field" />
-              <label>NOMBRE COMPLETO</label>
-            </section>
-            <section id="confirmation">
-              <input type="radio" /><label>Confirma con alegría</label>
-              <input type="radio" /><label>Lamentablemente declina</label>
-            </section>
-          </form>
-        </div>
-        <p id="adevertencia" class="asistencia-text">
-          SI NO SE CONFIRMA SU ASISTENCIA SU LUGAR SERÁ ASIGNADO A UNA PERSONA
-          EN LA LISTA DE ESPERA.
-        </p>
-      </div>
 
     </div>
     <script src="../js/carousel.js"></script>
