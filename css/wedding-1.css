@@ -159,10 +159,10 @@ body {
             transform: scaleX(-1);
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    margin-top: 4.8rem;
+    margin-top: 4.5rem;
   }
   #welcome {
-    margin: 6.2rem 0;
+    margin: 5.7rem 0;
     padding: 0rem 0rem;
     width: 100%;
     display: -webkit-box;
@@ -199,13 +199,17 @@ body {
     -webkit-box-shadow: 5px 0px 33px -12px rgba(0, 0, 0, 0.75);
     box-shadow: 5px 0px 33px -12px rgba(0, 0, 0, 0.75);
     position: absolute;
-    top: 38rem;
+    top: 37.5rem;
   }
   .invitation-title-text {
     font-size: 2.2rem;
     letter-spacing: 0.25em;
     text-align: center;
     margin-left: 0.25em;
+  }
+  #top-coord {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .names {
     font-size: 3.3rem;
@@ -231,6 +235,8 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     margin-left: 0em;
+    margin-top: 4.2rem;
+    margin-bottom: 4.2rem;
   }
   #date {
     margin: 2rem 0 3rem 0;
