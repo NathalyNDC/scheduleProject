@@ -189,12 +189,12 @@
       <h2 class="title-2 title-details">Sugerir Canción</h2>
     </header>
     <div class="modal-container">
-      <input type="text" placeholder="Tu nombre">
-      <input type="text" placeholder="Nombre de canción y autor">
-      <input type="text" placeholder="Opcional: link de YouTube, Spotify, etc.">
+      <input type="text" placeholder="Tu nombre" id="person-suggest">
+      <input type="text" placeholder="Nombre de canción y autor" id="song-suggest">
+      <input type="text" placeholder="Opcional: link de YouTube, Spotify, etc." id="link-suggest">
     </div>
     <footer class="modal-footer">
-      <button id="music-suggest" class="btn-modal">Sugerir canción</button>
+      <button id="send-music-suggest" class="btn-modal">Sugerir canción</button>
     </footer>
   </div>
 </div>
@@ -364,7 +364,7 @@
        <p class="asistencia-text">06 DE SEPTIEMBRE, 2025</p>
         <form id="confirm-assist">
           <section id="name">
-            <input type="text" id="name-field" />
+            <input type="text" id="name-field" required/>
             <label>NOMBRE COMPLETO</label>
           </section>
           <section id="quantity">
@@ -386,7 +386,7 @@
           SI NO SE CONFIRMA SU ASISTENCIA SU LUGAR SERÁ ASIGNADO A UNA PERSONA
           EN LA LISTA DE ESPERA.
         </p>
-        <button id="music-suggest" class="btn-modal">Confirmar</button>
+        <button id="send-confirm-rsvp" class="btn-modal">Confirmar</button>
       </footer>
     </div>
   </div>

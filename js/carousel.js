@@ -18,7 +18,7 @@ function showSlides() {
   setTimeout(showSlides, 3600); // Change image every 2 seconds
 }
 
-//MODAL
+//MODAL Suggest Song
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -47,7 +47,7 @@ window.onclick = function(event) {
 
 
 
-// Get the modal
+// Get the modal Dress Code
 var modal2 = document.getElementById("myModal-dressCode");
 
 // Get the button that opens the modal
@@ -74,7 +74,7 @@ window.onclick = function(event) {
 
 
 
-// Get the modal
+// Get the modal Notes
 var modal3 = document.getElementById("myModal-notes");
 
 // Get the button that opens the modal
@@ -103,7 +103,7 @@ window.onclick = function(event) {
 
 
 
-// Get the modal
+// Get the modal Confirmation RSVP
 var modal4 = document.getElementById("myModal-Confirm");
 
 // Get the button that opens the modal
@@ -126,4 +126,53 @@ window.onclick = function(event) {
   if (event.target == modal4) {
     modal4.style.display = "none";
   }
+}
+
+
+///
+
+var btnSuggestMusic = document.getElementById("send-music-suggest");
+btnSuggestMusic.onclick = function() {
+  //get field values
+  var personMusic = document.getElementById("person-suggest").value;
+  var songMusic = document.getElementById("song-suggest").value;
+  var linkMusic = document.getElementById("link-suggest").value;
+  //send to database
+ console.log(personMusic);
+ console.log(songMusic);
+ console.log(linkMusic);
+  //clean fields
+  document.getElementById("person-suggest").value="";
+  document.getElementById("song-suggest").value="";
+  document.getElementById("link-suggest").value="";
+  //close modal
+  modal.style.display = "none";
+}
+
+
+var btnrsvp = document.getElementById("send-confirm-rsvp");
+btnrsvp.onclick = function() {
+  //get field values
+  var personC = document.getElementById("name-field").value;
+  var quantityC = document.getElementById("quantity-field").value;
+  var yesR = document.getElementById("yesRadio").checked;
+  var confirm=false;
+  if(yesR==true){
+    confirm=true;
+  }
+  else{
+    confirm=false;
+  }
+  //send to database
+ console.log(personC);
+ console.log(quantityC);
+ console.log(confirm);
+  //clean fields
+  document.getElementById("name-field").value="";
+  document.getElementById("quantity-field").value="";
+  document.getElementById("yesRadio").checked=false;
+  document.getElementById("noRadio").checked=false;
+  //close modal"
+  confirm=false;
+  modal4.style.display = "none";
 }
