@@ -1,3 +1,4 @@
+//SLIDES PICTURES
 let slideIndex = 0;
 showSlides();
 
@@ -136,13 +137,32 @@ btnSuggestMusic.onclick = function() {
   //get field values
   var personMusic = document.getElementById("person-suggest").value;
   var songMusic = document.getElementById("song-suggest").value;
+  var authorMusic = document.getElementById("author-suggest").value;
   var linkMusic = document.getElementById("link-suggest").value;
   //send to database
  console.log(personMusic);
  console.log(songMusic);
+ console.log(authorMusic);
  console.log(linkMusic);
+ if (songMusic) {
+  jQuery.ajax({
+      url: 'music.php',
+      type: 'POST',
+      data: { name: personMusic, song:songMusic, artist:authorMusic, link:linkMusic },
+      success: function (response) {
+          if (response == 'exists') {
+            document.getElementById("response-notif").value="success";
+          } else {
+            document.getElementById("response-notif").value="failure";
+          }
+      }
+  });
+} else {
+  document.getElementById("response-notif").value="";
+}
   //clean fields
   document.getElementById("person-suggest").value="";
+  document.getElementById("song-suggest").value="";
   document.getElementById("song-suggest").value="";
   document.getElementById("link-suggest").value="";
   //close modal
@@ -150,6 +170,9 @@ btnSuggestMusic.onclick = function() {
 }
 
 
+
+
+//RSVP
 var btnrsvp = document.getElementById("send-confirm-rsvp");
 btnrsvp.onclick = function() {
   //get field values
@@ -167,6 +190,22 @@ btnrsvp.onclick = function() {
  console.log(personC);
  console.log(quantityC);
  console.log(confirm);
+ if (personC) {
+  jQuery.ajax({
+      url: 'rsvp.php',
+      type: 'POST',
+      data: { name: personC, quantity:quantityC, confirmation:confirm},
+      success: function (response) {
+        if (response == 'exists') {
+          document.getElementById("response-notif").value="success";
+        } else {
+          document.getElementById("response-notif").value="failure";
+        }
+      }
+  });
+} else {
+  document.getElementById("response-notif").value="";
+}
   //clean fields
   document.getElementById("name-field").value="";
   document.getElementById("quantity-field").value="";
