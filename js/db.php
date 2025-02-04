@@ -21,8 +21,9 @@
    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-        echo("failed");
+        echo "Failed";
     }
+    echo "Connected successfully";
     
 
 ?>
