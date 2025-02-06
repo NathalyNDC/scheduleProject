@@ -382,6 +382,12 @@ body {
     -webkit-filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
             filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
   }
+  .icon-list {
+    height: 3rem;
+    -webkit-filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+            filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+    display: inline;
+  }
   #party-details {
     margin: 0 0 0rem 0;
     padding: 1rem 0 0rem 0;
@@ -589,6 +595,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
     width: 100%;
   }
   #branch {
@@ -862,6 +869,7 @@ body {
     border: 0;
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
+    list-style: none;
   }
   li {
     list-style-position: square inside;
@@ -911,6 +919,24 @@ body {
     color: #8f8ed1;
     text-decoration: none;
     cursor: pointer;
+  }
+  .cere-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 @media (min-width: 1200px) {
@@ -1243,6 +1269,7 @@ body {
   }
   #party {
     margin-bottom: 0rem;
+    padding: 4rem 0 0rem 0;
   }
   .place-info {
     margin: 0rem 0;
@@ -1809,10 +1836,17 @@ body {
     border: 0;
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
+    list-style: none;
   }
   li {
     list-style-position: square inside;
     padding: 0 0 1rem 0;
+  }
+  .icon-list {
+    height: 1.6rem;
+    -webkit-filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+            filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+    display: inline;
   }
   input:focus {
     border-bottom: #5b3d7a solid 0.1rem;
@@ -1858,5 +1892,23 @@ body {
     color: #8f8ed1;
     text-decoration: none;
     cursor: pointer;
+  }
+  .cere-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }/*# sourceMappingURL=wedding-1.css.map */

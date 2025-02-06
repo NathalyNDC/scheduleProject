@@ -398,6 +398,11 @@ width: 100%;
   filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
 }
 
+.icon-list{
+  height: 3rem;
+  filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+  display: inline;
+}
 
 
 // -----------Details section
@@ -587,6 +592,7 @@ font-size: 2.5rem;
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
 }
 
@@ -868,6 +874,7 @@ margin: 0 0;
   border: 0;
   font-family: $nunito;
   margin: 0;
+  list-style: none;
   
 }
 li{
@@ -924,6 +931,14 @@ input:focus {
   color: $lila3;
   text-decoration: none;
   cursor: pointer;
+}
+.cere-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 
@@ -1238,6 +1253,7 @@ width: 100%;
 
 #party{
   margin-bottom: 0rem;
+  padding: 4rem 0 0rem 0;
   }
 
 .place-info{
@@ -1249,7 +1265,6 @@ width: 100%;
   height: 3rem;
   filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
 }
-
 
 
 // -----------Details section
@@ -1771,12 +1786,17 @@ margin: 0 auto;
   border: 0;
   font-family: $nunito;
   margin: 0;
-  
+  list-style: none;
 }
 li{
   list-style-position: square inside;
  padding: 0 0 1rem 0;
   
+}
+.icon-list{
+  height: 1.6rem;
+  filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+  display: inline;
 }
 
 input:focus {
@@ -1829,6 +1849,14 @@ input:focus {
   cursor: pointer;
 }
 
+.cere-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
 
 
 
