@@ -83,12 +83,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.tit1 {
-  //font-family: $poppins;
- color: $blue1;
-  font-size: 3rem;
-  margin: 0;
-}
+
 
 .btn {
   height: 4rem;
@@ -139,6 +134,7 @@ body {
 @media (min-width: 290px) and (max-width: 1200px) {
   .containerBody {
     width: 100%;
+    //height: 840rem;
     margin: 0;
     background-size: cover;
     display: flex;
@@ -154,7 +150,6 @@ body {
 #body-invitation1 {
   margin: 0 0 0rem 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   //background-image: url("../imgs/wedding/geometricflowers.jpg");
@@ -470,7 +465,7 @@ width: 100%;
 
 //FOTOS
 #pictures {
-  width: 90%;
+  width: 100%;
   margin-top: 6rem;
   
 }
@@ -538,7 +533,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  background-color: $lila2;
 }
 .mySlides{
   background-color: white;
@@ -596,6 +591,10 @@ font-size: 2.5rem;
 }
 
 #branch {
+  width: 30%;
+  margin: 0 auto;
+}
+#branch2 {
   width: 30%;
   margin: 0 auto;
 }
@@ -841,6 +840,18 @@ margin: 0 0;
   outline: none;
 }
 
+#colors0{
+  height: 26rem;
+}
+
+#colors2{
+  height: 20rem;
+}
+#colors3{
+  height: 30rem; 
+  width:32rem;
+}
+
 #list-notes {
   width: 100%;
   align-self: center;
@@ -875,6 +886,909 @@ input:focus {
   border-width: 0.1rem;
   border-radius: 3rem;
   font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0 0 3rem 0;
+  color: $lila5;
+  border-color: $lila2;
+  background-color: $lila2;
+  font-family: $pinyon-script-regular;
+}
+
+.btn-modal:active {
+  justify-self: center;
+  align-self: center;
+  border-color: $lila2;
+  background-color: $lila5;
+  font-family: $pinyon-script-regular;
+  color: white;
+}
+
+
+/* The Close Button */
+.closeDC {
+  color: white;
+  float: right;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 2rem 4rem 2rem 4rem;
+  padding: 0.8rem;
+  line-height: 3rem;
+  align-self: flex-end;
+  background-color: $lila5;
+  width: 5%;
+  border-radius: 50%;
+}
+
+.closeDC:hover,
+.closeDC:focus {
+  color: $lila3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+}
+
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - LAPTOP
+@media (min-width: 1200px) {
+
+
+  .btn {
+    height: 4rem;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    border-color: $blue2;
+    border-width: 0.1rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-image: linear-gradient(to right, $blue6 0%, $blue6 100%);
+    font-family: $poppins;
+    box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+    -webkit-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+    -moz-box-shadow: -12px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  }
+
+  .btn:hover {
+    height: 4rem;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    border-color: $blue2;
+    border-width: 0.1rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-image: linear-gradient(to right, $blue3 0%, $blue3 100%);
+    font-family: $poppins;
+    box-shadow: -22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+    -webkit-box-shadow: -2px 16px 26px -16px rgba(12, 98, 236, 0.65);
+    -moz-box-shadow: 22px 16px 26px -16px rgba(12, 98, 236, 0.65);
+  }
+
+  
+  .containerBody {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: $background;
+    color: black;
+  }
+  
+#body-invitation1 {
+  margin: 0 0 0rem 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //background-image: url("../imgs/wedding/geometricflowers.jpg");
+  //background-position: center; /* Center the image */
+  //background-repeat: no-repeat; /* Do not repeat the image */
+  //background-size: cover;
+  //background-size: 100% 100%;
+  //@include shadowContainer();
+  font-family: $nunito;
+  -webkit-box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 33px -12px rgba(0,0,0,0.75);
+}
+
+
+#welcome {
+  margin: 0;
+  padding: 0rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+#flower1{
+  width: 33rem;
+  transform: scaleX(-1);
+  position: relative;
+  top: -18rem;
+ //margin-bottom: 5rem;
+}
+
+#flower2{
+  height: 30rem;
+  transform: scaleX(-1);
+  transform: rotate(180deg);
+  margin-top: -0.5rem;
+}
+
+#welcome-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px black;
+  background-color: $lila1;
+  position: absolute;
+  top: 10rem;
+
+}
+
+
+#top-coord{
+ margin-top:1rem;
+ margin-bottom: 1rem;
+ font-size: 1.5rem;
+}
+
+.names {
+  display: flex;
+  font-size: 1.7rem;
+  line-height: 120%;
+  letter-spacing: 0.32em;
+  text-align: center;
+  margin: 0;
+  font-family: $open-sans;
+  color: $lila5;
+}
+.names p {
+  margin: 0 0rem 0 1rem;
+}
+
+.and {
+  font-size: 10rem;
+  line-height: 10rem;
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-left: 0em;
+}
+
+.and p{
+  letter-spacing: 0em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  //font-family: $monsieur;
+  margin-left: 0em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#date {
+  margin: 2rem 0 3rem 0;
+}
+
+.invitation-normal-text {
+  font-size: 2rem;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin-left: 0.25em;
+  color: black;
+}
+.invitation-title-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin-left: 0.25em;
+}
+
+//MAIN IMAGE AND COUNT DOWN
+#count-down{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content:center;
+  margin: 0 0 0rem 0;
+  
+}
+
+#main-image{
+  height: 30rem;
+  width: 30rem;
+ background-image: url("../imgs/wedding/LyN2.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  //background-size: 100% 104rem;
+  //@include shadowContainer();
+  font-family: $nunito;
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  height: 2rem;
+}
+svg {
+  position: relative;
+  top: 6rem;
+  fill:$lila1;
+  transform: rotate(180deg);
+
+}
+
+
+//GENERAL TITLES
+.title-1{
+  color: white;
+  background-color: $lila5;
+  padding: 1rem 1rem;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  font-weight: 200;
+  font-size: 1.6rem;
+}
+.title-2{
+  color: $lila5;
+ font-family: $open-sans;
+ font-size: 1.6rem;
+ margin: 0.6rem 0;
+ font-weight: 200;
+}
+
+.btn-mobile {
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  border-color: $lila2;
+  border-width: 0.01rem;
+  border-radius: 0.5rem;
+  color: $lila5;
+  background-color: $lila2;
+  font-family: $pinyon-script-regular;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 3rem 0;
+}
+.btn-mobile:active {
+  height: 3rem;
+  width: 15rem;
+  justify-self: center;
+  align-self: center;
+  border-color: $lila2;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  background-color: $lila5;
+  font-family: $pinyon-script-regular;
+  color: white;
+}
+
+.btn-mobile a {
+  font-family: $pinyon-script-regular;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $lila5;
+}
+.btn-mobile:active a {
+ font-family: $pinyon-script-regular;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+
+.separator {
+  width: 100%;
+  padding: 0 0 0rem 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: $lila1;
+}
+
+
+#branch-sep{
+  width: 65%;
+  margin: 0 auto;
+}
+#flower-sep{
+  width: 15%;
+  margin: 2rem auto;
+}
+
+//CEREMONIA
+.ceremonia{
+margin: 0 0 0rem 0;
+padding: 1rem 0 7rem 0;
+background-color: white;
+width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content:center;
+}
+
+#party{
+  margin-bottom: 0rem;
+  }
+
+.place-info{
+  margin: 0rem 0;
+  font-size: 1.3rem;
+}
+
+.icon-wed {
+  height: 3rem;
+  filter: invert(64%) sepia(17%) saturate(903%) hue-rotate(202deg) brightness(88%) contrast(91%);
+}
+
+
+
+// -----------Details section
+#party-details {
+  margin: 0 0 0rem 0;
+  padding: 4rem 0 0rem 0;
+  background-color: white;
+  width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content:center;
+  }
+
+  .text-details{
+    width: 80%;
+    padding: 0rem 1rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
+    font-size: 1.6rem;
+  }
+
+  .invitation-details-text {
+    font-size: 1.5rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+  }
+  .invitation-title-text p {
+    margin: 0;
+  }
+
+  .section-info{
+    width: 70%;
+   background-color: $lilaH;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .icon-details{
+    height: 10rem;
+    margin: 0rem 0;
+    filter: none;
+  }
+
+  #headphones{
+    height: 10rem;
+  }
+#letter{
+  height: 7rem;
+}
+
+
+#gifts{
+  display: none;
+}
+
+#gift{
+  height: 10rem;
+}
+  .btn-open-modal{
+    margin: 1rem 0;
+  }
+
+//FOTOS
+#pictures {
+  width: 33rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.title-carousel {
+  color: $lila5;
+  padding: 1rem 0rem;
+  width: 100%;
+  margin: 0 0 0rem 0;
+  font-weight: 800;
+}
+
+.text-carousel{
+  width: 90%;
+  
+}
+.icon-wed-carousel-text {
+  height: 3rem;
+  padding: 2rem 0 0rem 0rem;
+}
+
+#carrusel{
+  width: 100%;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  //max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: gray;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: $lila2;
+}
+.mySlides{
+  background-color: $lila1;
+  height: 37rem;
+  padding: 2rem;
+}
+.mySlides img{
+  height: 100%;
+  width: 100%;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+//---------------------------------------------------
+#conf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.angled-gradient {
+  background-color: white;
+}
+
+#confirmation{
+  margin: 9rem 0 6rem 0;
+  background-color: white;
+  width: 60%;
+}
+
+#myModal-Confirm{
+font-size: 1.5rem;
+}
+
+
+.text-one{
+  display: none;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#branch {
+  width: 25%;
+  margin: 0 auto;
+}
+#branch2 {
+  display: none;
+}
+
+.text-one p{
+  padding: 0.5rem 3rem;
+  font-size: 1.3rem;
+}
+
+#resp-text{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#resp-text p{
+  margin: 0 1rem;
+  display: in;
+}
+
+
+.asistencia-text {
+  letter-spacing: 0.03em;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.gold-elegant {
+  color: #a18905;
+  font-family: $monsieur;
+  font-size: 3rem;
+ line-height: 0.1rem;
+ margin: 0;
+}
+
+
+#confirm-assist {
+  margin-top: 0rem;
+  max-width: 100%;
+  padding: 0 5rem;
+  font-size: 85%;
+  line-height: 206%;
+  letter-spacing: 0.20em;
+  
+}
+#confirm-assist #name, #confirm-assist #quantity{
+ font-size: 0.9rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+}
+
+#name-field{
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+#quantity-field{
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+#confirmation-radio{
+  margin-top: 1rem;
+}
+
+.opt-rad{
+  margin: 0.5rem 0 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.opt-rad input{
+  max-width: 1.6rem;
+  margin: 0 0.5rem 0 0;
+  accent-color: $lila5;
+}
+
+
+#adevertencia {
+  padding: 0 3rem;
+  font-size: 0.8rem;
+  line-height: 190%;
+  letter-spacing: 0.25em;
+  margin: 0rem 0 1rem 0;
+}
+#send-confirm-rsvp{
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+
+//-------------------LOGO
+.separator-logo {
+  width: 100%;
+  padding: 0 0 0rem 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient($lila1, white, 60%, $lila1);
+ 
+}
+#logo-wed {
+  //width: 20%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0rem 0 0rem 0;
+  font-family: $bentham;
+  background-color: white;
+  padding: 0rem 0 0 0;
+  background-color: $lila1;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+}
+
+
+#logo-wed section p {
+margin: 0 0;
+}
+
+
+.sectDemo{
+  height: 100%;
+  background-color: $lila1;
+  background: linear-gradient($lila1, white, 60%, $lila1);
+  content: url('../imgs/wedding/logo.png');
+margin: 0 auto;
+  height: 20rem;
+}
+
+#test1 {
+  width: 35%;
+  margin: 0 auto;
+  
+}
+.secDemo-content{
+  position:relative;
+  top: -65%;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.namesDemo {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+ 
+}
+
+.pinyon{
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.and {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 0.7rem;
+  line-height: 3rem;
+}
+
+.initials {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  //font-size: 4rem;
+  line-height: 3rem;
+  letter-spacing: 0em;
+}
+
+.footer-1{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: 1.9rem;
+  background-color: $lila5;
+  color: white;
+}
+
+//MODALS
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 70%;
+  border-radius: 2rem;
+
+}
+.header-m{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* The Close Button */
+.close {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+  color: white;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 2rem;
+  padding: 0.051rem;
+  //line-height: 2rem;
+  align-self: flex-end;
+  background-color: $lila5;
+  width: 2.7rem;
+  //width: 1rem;
+  border-radius: 50%;
+}
+.close p {
+  position: relative;
+  text-align: center;
+}
+
+.close:hover,
+.close:focus {
+  color: $lila3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-container{
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  //height: 100%;
+}
+
+.modal-container input {
+  font-size: 1.3rem;
+  width: 65%;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border: 0;
+  border-bottom: #000 solid 1px;
+  font-family: $nunito;
+  outline: none;
+}
+
+
+#colors0{
+  height: 12rem;
+}
+#colors1{
+  height: 3rem;
+  display: none;
+  margin: 0 auto;
+}
+#colors2{
+  height: 10rem;
+  width:14rem;
+  margin: 0 auto;
+}
+#colors3{
+  height: 10rem; 
+  width:15rem;
+  
+}
+
+#list-notes {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.modal-container ul {
+  font-size: 1.3rem;
+  width: 70%;
+  padding: 0rem 0.5rem;
+  border: 0;
+  font-family: $nunito;
+  margin: 0;
+  
+}
+li{
+  list-style-position: square inside;
+ padding: 0 0 1rem 0;
+  
+}
+
+input:focus {
+  border-bottom: $lila5 solid 0.1rem;
+}
+
+.btn-modal{
+  height: 3rem;
+  width: 17rem;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin: 0 0 3rem 0;
   color: $lila5;

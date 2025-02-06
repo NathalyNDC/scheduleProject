@@ -132,6 +132,7 @@ window.onclick = function(event) {
 
 ///
 
+
 var btnSuggestMusic = document.getElementById("send-music-suggest");
 btnSuggestMusic.onclick = function() {
   //get field values
@@ -145,14 +146,18 @@ btnSuggestMusic.onclick = function() {
  console.log(authorMusic);
  console.log(linkMusic);
  if (songMusic) {
-  jQuery.ajax({
-      url: 'music.php',
-      type: 'POST',
-      data: { name: personMusic, song:songMusic, artist:authorMusic, link:linkMusic },
-      success: function (response) {
+  $.ajax({
+      url: '../js/music.php',
+      method: 'POST',
+      crossDomain:true,
+      dataType:"jsonp",
+      data: {name: personMusic, song:songMusic, artist:authorMusic, link:linkMusic},
+      success: function (json) {
           if (response == 'exists') {
+            console.log('message: ' + "success"+ JSON.stringify(json)); 
             document.getElementById("response-notif").value="success";
           } else {
+            console.log('message Error' + JSON.stringify(error));
             document.getElementById("response-notif").value="failure";
           }
       }

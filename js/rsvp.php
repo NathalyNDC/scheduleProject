@@ -1,5 +1,5 @@
 <?php
-include '../database/db.php';
+include 'db.php';
 
 $message = "";
 $toastClass = "";

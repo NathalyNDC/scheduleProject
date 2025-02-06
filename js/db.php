@@ -5,9 +5,9 @@
 
     $db_host = "localhost";
 
-    $db_user = "root";
+    $db_user = "admin@localhost";
 
-    $db_password = "password";
+    $db_password = "nay";
 
     $db_name = "wedding";
 
@@ -16,14 +16,12 @@
     // Create database connection
     $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
 
-
-
    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-        echo "Failed";
+        system.out.println("Failed");
     }
-    echo "Connected successfully";
+    system.out.println("Connected successfully");
     
 
 ?>
