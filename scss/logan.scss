@@ -1,0 +1,1499 @@
+//GLOBALES
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500|Open+Sans:300italic,500italic,300,400,500|Qwitcher+Grypen:400,700|Anuphan:300,400,500,700|Poppins:200,300,400,500,600);
+
+// Font Variables
+$nunito-sans: "Nunito Sans", serif;
+$open-sans: "Open Sans", "sans-serif";
+$qwitcher: "Qwitcher Grypen", cursive;
+$poppins: "Poppins", sans-serif;
+$anuphan: "Anuphan", sans-serif;
+
+//Color vars - primary
+$blue1: #150a5b;
+$blue2: #210f93;
+$blue3: #1739c0;
+$blue4: #0c62ec;
+$blue5: #3e64ee;
+$blue6: #1a55d6;
+$blue7: #19589d;
+$blue8: #0e97ca;
+$blue9: #03d6f7;
+$background: #f9f9f9f9;
+
+//timeline
+$content-width: calc(40vw - 84px);
+$margin: 20px;
+$spacing: 20px;
+$bdrs: 6px;
+$circle-size: 40px;
+$icon-size: 32px;
+$bdrs-icon: 100%;
+
+$color1: $blue5;
+$color2: white;
+
+$color3: white;
+$color4: $blue8;
+
+$color5: $blue2;
+$color6: white;
+
+//sizes
+$maxWidthsize: 80rem;
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: $open-sans;
+  font-weight: 300;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+  box-shadow: 0px 5px 15px 0px rgba(153, 147, 153, 1);
+}
+
+//TYPO
+h2, .tit1,
+h3 {
+  text-transform: uppercase;
+}
+
+.tit1 {
+  font-family: $poppins;
+  color: $blue1;
+  font-size: 3rem;
+  margin: 0;
+}
+.separador {
+  border-bottom: 0.5rem solid $blue8;
+  color: white;
+  font-size: 0.2rem;
+  width: 6rem;
+  transition: width 1s;
+  margin-bottom: 3rem;
+}
+.tit2 {
+  font-family: $poppins;
+  color: $blue1;
+}
+
+.tit3 {
+  font-family: $poppins;
+  color: white;
+}
+
+.enfasis {
+  color: $blue6;
+  font-weight: 700;
+}
+.btn {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  border-color: $blue2;
+  border-width: 0.1rem ;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: linear-gradient(to right, $blue6 0%, $blue6 100%);
+  font-family: $poppins;
+  box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+-webkit-box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+-moz-box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+}
+.btn:hover {
+  height: 4rem;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  border-color: $blue2;
+  border-width: 0.1rem ;
+  border-radius: 1.5rem;
+  color: white;
+  background-image: linear-gradient(to right, $blue3 0%, $blue3 100%);
+  font-family: $poppins;
+  box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+-webkit-box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+-moz-box-shadow: -12px 16px 26px -16px rgba(12,98,236,0.65);
+}
+
+//**UTILIDADES
+.w-sm-100 {
+  width: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.aling-right {
+  justify-content: flex-end;
+}
+@mixin shadowContainer() {
+  //write CSS code here
+  box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+-webkit-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+-moz-box-shadow: -1px 10px 38px -11px rgba(196, 192, 192, 0.68);
+}
+//BACKGROUND
+.area{
+  background: $background;  
+  background: -webkit-linear-gradient(to left, #5a62eb, #262db9);  
+  width: 100%;
+  height:460rem;
+  
+}
+
+.circles{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(92, 152, 201, 0.445);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 2%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 5%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 5%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 90%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+}
+
+
+
+
+
+
+
+//Content resume
+#content-resume1 {
+  
+  font-family: $open-sans;
+  padding: 2rem 2rem;
+  margin: 0;
+  max-width: 1200rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0vh;
+  overflow-y:hidden;
+  overflow-x: hidden;
+}
+
+//Main nav
+header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#btn-nav, #lb-btn-nav {
+  display: none;
+  visibility: hidden;
+}
+.resume1-nav-bg {
+  background-image: radial-gradient(
+    circle at 103.92% 90.56%,
+    $blue3 81.25%,
+    $blue4 93.75%,
+    $blue6 100%
+  );
+  border-bottom: 0.2rem solid $blue9;
+  width: 90%;
+  margin: 0 auto;
+  position:fixed;
+  top: 1em;
+  left: 5%;
+  
+}
+.resume1-main-nav {
+  border-bottom-color: $blue5;
+  font-family: $open-sans;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume1-main-nav a {
+  color: white;
+  padding: 0.5rem 6rem;
+  font-family: $open-sans;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1.8rem;
+}
+
+.resume1-main-nav a:hover {
+  color: white;
+  padding: 0.5rem 6rem;
+  background-color: $blue4;
+}
+
+//body resume content
+#content-resumebody {
+  margin-top: 12rem;
+  font-family: $open-sans;
+  padding: 2rem 0rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//personal info resume
+.resume-personalInfo {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  top: 10em;
+  left: 5%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+.profile-picture {
+  max-width: 57%;
+  max-height: 57%;
+  position:relative;
+  top: -5em;
+  border-radius: 3.5rem;
+}
+.title-resume {
+  font-size: 170%;
+  font-weight: 500;
+  font-family: $anuphan;
+  color: gray;
+  text-align: center;
+  margin-top: -7rem;
+  margin-bottom: 1rem;
+}
+.lastNameMc {
+  color: $blue1;
+  font-weight: bold;
+}
+#career {
+  background-color: $background;
+  border-radius: 1rem;
+  padding: 1% 1.5rem;
+}
+
+.resumeIcons-contact {
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+.svgIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0rem 1rem;
+  filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+}
+
+.resume1-pinfo2 {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 7% 7%;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-size: 100%;
+}
+.resume1-pinfo2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 90%;
+}
+// .resume1-pinfo2 span {
+//  margin: 1rem 0;
+//}
+#loc {
+  margin-bottom: 7%;
+}
+#locationIcon {
+  max-width: 10%;
+  max-height: 2rem;
+  margin-right: 0.5rem;
+}
+#em {
+  margin-bottom: 1%;
+}
+#emailIcon {
+  max-width: 10%;
+  max-height: 1.6rem;
+  margin-right: 0.2rem;
+}
+#cell {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: -0%;
+}
+#cellIcon {
+  max-width: 8%;
+  max-height: 2.8rem;
+}
+#cellL{
+  max-width: 70%;
+  max-height: 5rem;
+}
+#rem{
+  margin-bottom: 10%;
+}
+#remoteIcon {
+  max-width: 12%;
+  max-height: 2rem;
+  margin-right: 0.3rem;
+}
+#downloadIcon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin: 0rem 1rem;
+  filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+}
+.resume1-pinfo2 button a {
+  color: white;
+}
+//complete info next to profile
+.resume-CompleteInfo {
+  width: 68%;
+  background-color: white;
+  margin-right: 4%;
+  margin-left: 29%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+#resume1-about:hover {
+  .separador {
+    width: 50%;
+  }
+}
+#resume1-about {
+  padding: 5rem 5rem;
+}
+
+
+
+//SKILLS section
+#resume1-skills {
+ width: 100%;
+  background-color: $background;
+  padding: 5rem 5rem;
+}
+#resume1-skills:hover {
+  .separador {
+    width: 50%;
+  }
+}
+.skill-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.skill-section {
+  background-color: white;
+  margin: 1rem;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  @include shadowContainer();
+}
+
+
+.skill-section h3 {
+  color: $blue7;
+  font-family: $nunito-sans;
+  width: 100%;
+}
+
+.skill-section .icons {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-list {
+  text-align: left;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+.skills-list li img{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+//EXPERIENCE section
+#resume1-experience {
+  font-family: $open-sans;
+ max-width: 100%;
+  padding: 5rem 5rem;
+}
+#resume1-experience:hover {
+  .separador {
+    width: 50%;
+  }
+}
+#list-jobs {
+  width: Min(95rem, 100%); //use the lowest value
+  margin: 0 auto;
+  padding: 0rem;
+  display: flex;
+}
+
+
+#resume1-experience .timeline {
+	display: flex;
+	flex-direction: column;
+	margin: $margin auto;
+  height: 90%;
+  width: 100%;
+
+	&__event {
+		margin-bottom: $spacing;
+		display: flex;
+		margin: $spacing 0;
+		border-radius: $bdrs;
+		align-self: center;
+		width: 50vw;
+
+		&:nth-child(2n + 1) {
+			flex-direction: row-reverse;
+			.timeline__event__date {
+				border-radius: 0 $bdrs $bdrs 0;
+			}
+			.timeline__event__content {
+				border-radius: $bdrs 0 0 $bdrs;
+			}
+      
+
+			.timeline__event__icon {
+				&:before {
+					content: "";
+					width: 2px;
+					height: 100%;
+          border: 1px solid $color2;
+          background-color: white;
+					position: absolute;
+					top: 0%;
+					left: 50%;
+					right: auto;
+					z-index: -1;
+					transform: translateX(-50%);
+					animation: fillTop 2s forwards 4s ease-in-out;
+				}
+				&:after {
+					content: "";
+					width: 100%;
+					height: 2px;
+					border: 1px solid $color2;
+					position: absolute;
+					right: 0;
+					z-index: -1;
+					top: 50%;
+					left: auto;
+					transform: translateY(-50%);
+					animation: fillLeft 2s forwards 4s ease-in-out;
+				}
+			}
+		}
+
+		&__title {
+			font-size: 1.2rem;
+			line-height: 1.4;
+			text-transform: uppercase;
+
+			font-weight: 600;
+			color: $color1;
+			letter-spacing: 1.5px;
+		}
+		&__content {
+			padding: $spacing;
+			box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+				0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+			background: #fff;
+			width: $content-width;
+			border-radius: 0 $bdrs $bdrs 0;
+		}
+		&__date {
+			color: $color2;
+			font-size: 1.5rem;
+			font-weight: 600;
+			background: $color1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			white-space: nowrap;
+			padding: 0 $spacing;
+			border-radius: $bdrs 0 0 $bdrs;
+		}
+		&__icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: $color1;
+			padding: $spacing;
+			align-self: center;
+			margin: 0 $spacing;
+			border-radius: $bdrs-icon;
+      border: 1px solid $color2;
+          background-color: white;
+			width: $circle-size;
+			box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+				0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+			padding: 40px;
+			height: $circle-size;
+
+			i img {
+				width: 4rem;
+			}
+
+			&:before {
+				content: "";
+				width: 2px;
+				height: 100%;
+				background: $color2;
+				position: absolute;
+				top: 0%;
+				z-index: -1;
+				left: 50%;
+				transform: translateX(-50%);
+				animation: fillTop 2s forwards 4s ease-in-out;
+			}
+			&:after {
+				content: "";
+				width: 100%;
+				height: 2px;
+				background: $color2;
+				position: absolute;
+				left: 0%;
+				z-index: -1;
+				top: 50%;
+				transform: translateY(-50%);
+				animation: fillLeftOdd 2s forwards 4s ease-in-out;
+			}
+		}
+		&__description {
+			flex-basis: 100%;
+		}
+
+		&--type2 {
+			&:after {
+				background: $color4;
+			}
+			.timeline__event__date {
+				color: $color3;
+				background: $color4;
+			}
+
+			&:nth-child(2n + 1) {
+				.timeline__event__icon {
+					&:before,
+					&:after {
+						background: white;
+            border: 1px solid $color3;
+					}
+				}
+			}
+
+			.timeline__event__icon {
+				background: white;
+            border: 1px solid $color3;
+				color: $color4;
+				&:before,
+				&:after {
+					background: white;
+          border: 1px solid $color3;
+				}
+			}
+			.timeline__event__title {
+				color: $color4;
+			}
+			
+		}
+
+		&--type3 {
+			&:after {
+				background: $color5;
+			}
+			.timeline__event__date {
+				color: $color6;
+				background-color: $color5;
+			}
+
+			&:nth-child(2n + 1) {
+				.timeline__event__icon {
+					&:before,
+					&:after {
+						background: white;
+          border: 1px solid $color6;
+					}
+				}
+			}
+
+			.timeline__event__icon {
+				background: white;
+          border: 1px solid $color6;
+				color: $color5;
+				&:before,
+				&:after {
+					background: white;
+          border: 1px solid $color6;
+				}
+			}
+			.timeline__event__title {
+				color: $color5;
+			}
+			
+		}
+		&:last-child {
+			.timeline__event__icon {
+				&:before {
+					content: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 786px) {
+	#resume1-experience .timeline__event {
+		flex-direction: column;
+		align-self: center;
+		&__content {
+			width: 100%;
+		}
+
+		&__icon {
+			border-radius: $bdrs $bdrs 0 0;
+			width: 100%;
+			margin: 0;
+			box-shadow: none;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+		&__date {
+			border-radius: 0;
+			padding: $spacing;
+		}
+
+		&:nth-child(2n + 1) {
+			flex-direction: column;
+			align-self: center;
+
+			.timeline__event__date {
+				border-radius: 0;
+				padding: $spacing;
+			}
+
+			.timeline__event__icon {
+				border-radius: $bdrs $bdrs 0 0;
+				margin: 0;
+			}
+		}
+	}
+}
+
+@keyframes fillLeft {
+	100% {
+		right: 100%;
+	}
+}
+
+@keyframes fillTop {
+	100% {
+		top: 100%;
+	}
+}
+
+@keyframes fillLeftOdd {
+	100% {
+		left: 100%;
+	}
+}
+
+
+
+
+
+
+//PORTFOLIO
+#resume1-portfolio {
+  padding: 5rem 5rem;
+  background-color: $background;
+}
+#resume1-portfolio:hover {
+  .separador {
+    width: 50%;
+  }
+}
+.serv-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.services-section {
+  background-color: white;
+  margin: 1rem;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  
+}
+
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: $blue9;
+}
+
+.services-section h3 {
+  color: $blue7;
+  font-family: $nunito-sans;
+  width: 100%;
+}
+
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(231, 231, 243, 0.418);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//EDUCATION
+#resume1-education {
+  padding: 5rem 5rem;
+  
+}
+#resume1-education:hover {
+  .separador {
+    width: 50%;
+  }
+}
+
+#educContent  {
+  font-family: $open-sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.educ-uni  img {
+  width: 30rem;
+  padding: 2rem;
+}
+#educ-degree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+}
+#educ-degree p {
+  margin: 0;
+}
+#careerL {
+  font-weight: 400;
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - MOBILE
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #content-resume1 {
+    padding: 0rem 0rem;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0vh;
+    overflow-y:visible;
+    overflow-x: visible;
+  }
+  
+  //Main nav
+  header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resume1-nav-bg {
+    border-bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+  }
+  .resume1-main-nav {
+    border: 0;
+    font-family: $open-sans;
+    font-weight: 300;
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    height: calc(333px);
+    background-image: radial-gradient(
+      circle at 103.92% 90.56%,
+      $blue3 81.25%,
+      $blue4 93.75%,
+      $blue6 100%
+    );
+    transform: translateX(-100%);
+    transition: .4s ease;
+  }
+  
+  .resume1-main-nav a {
+    width: 100%;
+    border-bottom: 3px $blue9;
+    display: block;
+    line-height: 3.7;
+    padding: 0rem 10px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    font-size: 1.6rem;
+  }
+  
+  .resume1-main-nav a:hover {
+    transform: translateX(0%);
+  }
+  #lb-btn-nav {
+    display: flex;
+    visibility: visible;
+  }
+
+  #btn-nav:checked ~ nav {
+    transform: translateX(0);
+  }
+
+  .btn-nav{
+    position:absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 6.5px 15px;
+    transition: .2s ease;
+    background: rgba($color: #000000, $alpha: 0.1);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .btn-nav:hover {
+    background: rgba($color: #000000, $alpha: 0.3);
+  }
+  #menuIconWizard {
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: 0rem 1rem;
+    filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+  }
+
+  //body resume content
+  #content-resumebody {
+    margin-top: 0rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+  //personal info resume
+  .resume-personalInfo {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    position: static;
+    top: 0em;
+    left: 0em;
+    border-radius: 0.8rem;
+    @include shadowContainer();
+    margin-bottom: 3rem;
+  }
+  
+  .profile-picture {
+    max-width: 19rem;
+    max-height: 19rem;
+    position:static;
+    top: 0em;
+    left: 0em;
+    border-radius: 10rem;
+    margin-top: 2.5rem;
+  }
+  .title-resume {
+    font-size: 2em;
+    font-weight: 500;
+    font-family: $anuphan;
+    color: gray;
+    text-align: center;
+    line-height: 0.9em;
+    margin-top: 0.5em;
+    margin-bottom: 3rem;
+  }
+  .lastNameMc {
+    color: $blue1;
+    font-weight: bold;
+  }
+  #career {
+    background-color: $background;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .resumeIcons-contact {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .svgIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 0rem 1rem;
+    filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+  }
+  
+  .resume1-pinfo2 {
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 3rem 2rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    font-size: 93%;
+  }
+
+  // .resume1-pinfo2 span {
+  //  margin: 1rem 0;
+  //}
+  #loc {
+    margin-bottom: 2rem;
+  }
+  #locationIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.5rem;
+  }
+  #em {
+    margin-bottom: 1rem;
+  }
+  #emailIcon {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.2rem;
+  }
+  #cell {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  #cellIcon {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+  #cellL{
+    max-width: 15rem;
+    max-height: 7.5rem;
+  }
+  #rem{
+    margin-bottom: 2rem;
+  }
+  #remoteIcon {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    margin-right: 0.3rem;
+  }
+  #downloadIcon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin: 0rem 1rem;
+    filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+  }
+  .resume1-pinfo2 button a {
+    color: white;
+  }
+
+
+
+  //complete info next to profile
+  .resume-CompleteInfo {
+    width: 82%;
+    background-color: white;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    border-radius: 0.8rem;
+    @include shadowContainer();
+  }
+  
+
+  #resume1-about {
+    padding: 5rem 3rem;
+  }
+
+
+//SKILLS section
+#resume1-skills {
+   padding: 5rem 0rem;
+   width: 100%;
+ }
+ #resume1-skills .tit1{
+  padding: 0 3rem;
+ }
+ #resume1-skills .separador{
+  margin: 1rem 0rem 3rem 3rem;
+}
+ .skill-row {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .skill-section {
+   width: 100%;
+   margin: 0rem;
+   grid-column: auto;
+   grid-row: auto;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1rem 0rem;
+   text-align: center;
+   @include shadowContainer();
+ }
+ 
+ 
+ .skill-section h3 {
+   color: $blue7;
+   font-family: $nunito-sans;
+   width: 100%;
+ }
+ 
+ .skill-section .icons {
+   height: 8rem;
+   width: 8rem;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .skills-list {
+   text-align: left;
+   list-style-type: none;
+   font-size: 1.5rem;
+ }
+ 
+ .skills-list li img{
+   height: 2rem;
+   width: 2rem;
+   margin-right: 1rem;
+ }
+
+//work Experience looks fine
+
+
+//PORTFOLIO MOBILE
+#resume1-portfolio {
+  padding: 0rem 0rem;
+  background-color: $background;
+}
+
+#resume1-portfolio h1{
+  padding: 1rem 0rem 0rem 5rem;
+}
+ #resume1-portfolio .separador{
+  margin: 1rem 0rem 2rem 5rem;
+}
+.serv-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.5rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.services-section {
+  background-color: white;
+  margin: 1rem;
+  grid-column: auto;
+  grid-row: auto;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  
+}
+
+.services-section:hover {
+  border-width: 0.2rem 0.2rem 0.4rem 0.2rem;
+  border-style: solid;
+  border-color: $blue9;
+}
+
+.services-section h3 {
+  color: $blue7;
+  font-family: $nunito-sans;
+  width: 100%;
+}
+
+.services-section .icons {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(231, 231, 243, 0.418);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//EDUCATION
+
+#educContent  {
+  flex-direction: column;
+}
+
+#educ-degree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+  
+}
+
+
+///////////////////////////////////////////////////////////////
+/// //RESPONSIVE DESIGN - TABLET AND iPAD
+ @media (min-height: 0px) and (max-height: 595px) {
+
+  //personal info resume
+.resume-personalInfo {
+  font-size: 90%;
+
+ }
+
+ #em a {
+  font-size: 70%;
+ }
+
+ }
+
+
+////////////////////////////////////////////////////////////////////
+//RESPONSIVE DESIGN - BIG screen
+@media (min-width: 1800px) and (max-width: 2700px) {
+
+  //Content resume
+#content-resume1 {
+  max-width: 100%;
+  
+}
+  //Main nav
+header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.resume1-nav-bg {
+  width: 80%;
+  left: 10%;
+}
+/*
+.resume1-main-nav a {
+  font-size: 22px;
+}*/
+
+//body resume content
+#content-resumebody {
+
+  padding: 2rem 0rem;
+  width: 85%;
+  justify-content: center;
+  padding-left: 15%;
+  
+}
+//personal info resume
+.resume-personalInfo {
+  width: 30rem;
+
+  position: fixed;
+ 
+  left: 15%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+
+.title-resume {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: $anuphan;
+  color: gray;
+  text-align: center;
+  line-height: 0.9em;
+  
+  margin-bottom: 3rem;
+}
+.lastNameMc {
+  color: $blue1;
+  font-weight: bold;
+}
+#career {
+  background-color: $background;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.resumeIcons-contact {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.svgIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0rem 1rem;
+  filter: invert(11%) sepia(65%) saturate(2456%) hue-rotate(237deg) brightness(93%) contrast(118%);
+}
+
+.resume1-pinfo2 {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 3rem 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.resume1-pinfo2 a {
+  text-decoration: none;
+  color: black;
+}
+// .resume1-pinfo2 span {
+//  margin: 1rem 0;
+//}
+#loc {
+  margin-bottom: 2rem;
+}
+#locationIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-right: 0.5rem;
+}
+#em {
+  margin-bottom: 1rem;
+}
+#emailIcon {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-right: 0.2rem;
+}
+#cell {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+#cellIcon {
+  max-width: 3rem;
+  max-height: 3rem;
+}
+#cellL{
+  max-width: 15rem;
+  max-height: 7.5rem;
+}
+#rem{
+  margin-bottom: 2rem;
+}
+#remoteIcon {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-right: 0.3rem;
+}
+#downloadIcon {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  margin: 0rem 1rem;
+  filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(313deg) brightness(102%) contrast(103%);
+}
+.resume1-pinfo2 button a {
+  color: white;
+}
+
+//complete info next to profile
+.resume-CompleteInfo {
+  width: 75%;
+  background-color: white;
+  margin-right: 0%;
+  margin-left: 4%;
+  border-radius: 1.5rem;
+  @include shadowContainer();
+}
+
+
+}

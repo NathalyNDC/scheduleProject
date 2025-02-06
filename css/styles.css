@@ -4,8 +4,6 @@ html {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 *,
@@ -39,8 +37,8 @@ body {
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 5px 15px 0px #999399;
-  box-shadow: 0px 5px 15px 0px #999399;
+  -webkit-box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
+  box-shadow: 0px 5px 15px 0px rgb(153, 147, 153);
 }
 
 h2,
@@ -88,8 +86,6 @@ h3 {
   padding: 1%;
   margin: 1% 0% 0.2% 0%;
   line-height: 0.7em;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 #career {
@@ -139,6 +135,67 @@ h3 {
   color: white;
   padding: 1rem 1rem;
   background-color: #ff9671;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  color: white;
+  padding: 1rem 1rem;
+  font-family: "Open Sans", "sans-serif";
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: white;
+  padding: 1rem 1rem;
+  background-color: #ff9671;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #ff9671;
+  background-color: #ffffb5;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .hero {
@@ -203,14 +260,10 @@ h3 {
 }
 
 .serv-row {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   grid-auto-rows: minmax(100px, auto);
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
 }
 
 .services-section {
@@ -251,7 +304,7 @@ h3 {
 .services-section .icons {
   height: 15rem;
   width: 15rem;
-  background-color: #f1f3f8be;
+  background-color: rgba(241, 243, 248, 0.7450980392);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,13 +322,13 @@ h3 {
   font-family: "Open Sans", "sans-serif";
   max-width: 1200em;
   padding: 2rem 10rem;
-  height: 40em;
+  height: 45em;
 }
 
 #contact form {
   background-color: #96dbe6;
   border-radius: 0.5rem;
-  width: Min(60rem, 100%);
+  width: min(60rem, 100%);
   margin: 0 auto;
   padding: 2rem;
   color: white;
@@ -297,16 +350,12 @@ h3 {
 }
 
 .form-fields {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 73%;
-      grid-template-columns: 25% 73%;
-  -ms-grid-rows: auto auto auto auto 20rem;
-      grid-template-rows: auto auto auto auto 20rem;
+  grid-template-columns: 25% 73%;
+  grid-template-rows: auto auto auto auto 20rem;
   -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
           column-gap: 1rem;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
 }
 
 .form-field {
@@ -314,8 +363,6 @@ h3 {
 }
 
 .form-field:nth-child(1), .form-field:nth-child(2), .form-field:nth-child(5), .form-field:nth-child(6) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
@@ -333,6 +380,7 @@ h3 {
 
 .form-field textarea {
   height: 15rem;
+  resize: none;
 }
 
 .footer {
@@ -379,13 +427,9 @@ h3 {
     color: white;
   }
   .serv-row {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
