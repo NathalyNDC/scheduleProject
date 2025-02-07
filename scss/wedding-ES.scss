@@ -946,7 +946,8 @@ input:focus {
   background-color: #ff7b71;
   color: $lila5;
   position:fixed;
-  margin: 50% auto;
+  top: 0%;
+  left: 0;
   font-size: 2.6rem;
   width: 100%;
    height: 5rem;
@@ -958,7 +959,8 @@ input:focus {
   background-color: #bbf37b;
   color: $lila5;
   position:fixed;
-  margin: 50% auto;
+  top: 0%;
+  left: 0;
    font-size: 2.6rem;
    width: 100%;
    height: 5rem;
@@ -970,7 +972,8 @@ input:focus {
   background-color: #e1f37b;
   color: $lila5;
   position:fixed;
-  margin: 50% auto;
+  top: 0%;
+  left: 0;
    font-size: 2.6rem;
    width: 100%;
    height: 5rem;
@@ -982,7 +985,7 @@ input:focus {
   color: $lila5;
   font-weight: bold;
   float: right;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   line-height: 2rem;
   cursor: pointer;
   transition: 0.3s;
@@ -1913,7 +1916,7 @@ input:focus {
   background-color: #ff7b71;
   color: $lila5;
   position:fixed;
-  top: 50%;
+  top: 0;
   left: 0;
   font-size: 2.6rem;
   width: 100%;
@@ -1926,7 +1929,7 @@ input:focus {
   background-color: #bbf37b;
   color: $lila5;
   position:fixed;
-  top: 50%;
+  top: 0;
   left: 0;
    font-size: 2.6rem;
    width: 100%;
@@ -1939,7 +1942,7 @@ input:focus {
   background-color: #e1f37b;
   color: $lila5;
   position:fixed;
-  top: 50%;
+  top: 0;
   left: 0;
    font-size: 2.6rem;
    width: 100%;
