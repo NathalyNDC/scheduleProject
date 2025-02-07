@@ -1,37 +1,33 @@
 <?php
 include 'db.php';
 
-$message = "";
-$toastClass = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+$data = '{}'; // json string
 
 $name = $_POST['name'];
 $quantity = $_POST['quantity'];
 $confirmation = $_POST['confirmation'];
 
-
+header("Access-Control-Allow-Origin: *");
 
     // Prepare and bind
     $stmt = $conn->prepare("INSERT INTO rsvp (name, quantity, confirmation) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $name, $quantity, $confirmation);
 
     if ($stmt->execute()) {
-        $message = "Response saved successfully/Respuesta guardada";
-        $toastClass = "#28a745"; // Success color
+        echo "Sent/Enviado";
+        if(isset($_POST['data'])){
+            echo 'Sent/Enviado';
+        }
     } else {
-        $message = "Error: " . $stmt->error;
-        $toastClass = "#dc3545"; // Danger color
+        echo "Error";
+        if(isset($_POST['data'])){
+            echo 'Error';
+        }
     }
 
     $stmt->close();
-
-
-
-
-$checkSong->close();
     $conn->close();
 
-}
+
 
 ?>

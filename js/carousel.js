@@ -140,38 +140,47 @@ btnSuggestMusic.onclick = function() {
   var songMusic = document.getElementById("song-suggest").value;
   var authorMusic = document.getElementById("author-suggest").value;
   var linkMusic = document.getElementById("link-suggest").value;
+  var alertDWrong = document.getElementById("alert");
+  var alertSuccess = document.getElementById("alert2");
+  var alertWarning = document.getElementById("alert3");
   //send to database
- console.log(personMusic);
- console.log(songMusic);
- console.log(authorMusic);
- console.log(linkMusic);
- if (songMusic) {
+ if (songMusic!="") {
   $.ajax({
       url: '../js/music.php',
-      method: 'POST',
+      type: 'POST',
       crossDomain:true,
-      dataType:"jsonp",
-      data: {name: personMusic, song:songMusic, artist:authorMusic, link:linkMusic},
-      success: function (json) {
-          if (response == 'exists') {
-            console.log('message: ' + "success"+ JSON.stringify(json)); 
-            document.getElementById("response-notif").value="success";
-          } else {
-            console.log('message Error' + JSON.stringify(error));
-            document.getElementById("response-notif").value="failure";
-          }
-      }
-  });
-} else {
-  document.getElementById("response-notif").value="";
-}
+      data: {"name": personMusic, "song":songMusic, "artist":authorMusic, "link":linkMusic},
+      success: function (data) {
+        switch(data){
+          case "Sent/Enviado":
+            alertSuccess.style.display = "inline";
+            break;
+            case "The song was already suggested/Ya fue sugerida la cancion":
+              alertWarning.style.display = "inline";
+            break;
+            case "Error":
+              alertDWrong.style.display = "inline";
+            break;
+        }
+         
+      },error: function(err) {
+        console.log(err);
+        console.log(err.responseText);
+        alert(err.responseText);
+    }});
   //clean fields
   document.getElementById("person-suggest").value="";
   document.getElementById("song-suggest").value="";
-  document.getElementById("song-suggest").value="";
+  document.getElementById("author-suggest").value="";
   document.getElementById("link-suggest").value="";
   //close modal
   modal.style.display = "none";
+
+} 
+else {
+  document.getElementById("response-notif").value="";
+}
+  
 }
 
 
@@ -185,6 +194,8 @@ btnrsvp.onclick = function() {
   var quantityC = document.getElementById("quantity-field").value;
   var yesR = document.getElementById("yesRadio").checked;
   var confirm=false;
+  var alertDWrong = document.getElementById("alert");
+  var alertSuccess = document.getElementById("alert2");
   if(yesR==true){
     confirm=true;
   }
@@ -196,18 +207,28 @@ btnrsvp.onclick = function() {
  console.log(quantityC);
  console.log(confirm);
  if (personC) {
-  jQuery.ajax({
-      url: 'rsvp.php',
-      type: 'POST',
-      data: { name: personC, quantity:quantityC, confirmation:confirm},
-      success: function (response) {
-        if (response == 'exists') {
-          document.getElementById("response-notif").value="success";
-        } else {
-          document.getElementById("response-notif").value="failure";
-        }
+  $.ajax({
+    url: '../js/rsvp.php',
+    type: 'POST',
+    crossDomain:true,
+    data: {"name": personC, "quantity":quantityC, "confirmation":confirm},
+    success: function (data) {
+      switch(data){
+        case "Sent/Enviado":
+          alertSuccess.style.display = "inline";
+          break;
+          case "Error":
+            alertDWrong.style.display = "inline";
+          break;
       }
-  });
+       
+    },error: function(err) {
+      console.log(err);
+      console.log(err.responseText);
+      alert(err.responseText);
+  }});
+
+
 } else {
   document.getElementById("response-notif").value="";
 }

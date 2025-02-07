@@ -1,16 +1,9 @@
-//DATABASE
 <?php
-
     // Database connection details
-
     $db_host = "localhost";
-
-    $db_user = "admin@localhost";
-
+    $db_user = "admin";
     $db_password = "nay";
-
     $db_name = "wedding";
-
 
 
     // Create database connection
@@ -19,9 +12,8 @@
    // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-        system.out.println("Failed");
     }
-    system.out.println("Connected successfully");
+  //  echo "Connected successfully";
     
 
 ?>
