@@ -206,7 +206,7 @@ btnrsvp.onclick = function() {
  console.log(personC);
  console.log(quantityC);
  console.log(confirm);
- if (personC) {
+ if (personC!="") {
   $.ajax({
     url: '../js/rsvp.php',
     type: 'POST',
@@ -228,16 +228,17 @@ btnrsvp.onclick = function() {
       alert(err.responseText);
   }});
 
+//clean fields
+document.getElementById("name-field").value="";
+document.getElementById("quantity-field").value="";
+document.getElementById("yesRadio").checked=false;
+document.getElementById("noRadio").checked=false;
+//close modal"
+confirm=false;
+modal4.style.display = "none";
 
 } else {
   document.getElementById("response-notif").value="";
 }
-  //clean fields
-  document.getElementById("name-field").value="";
-  document.getElementById("quantity-field").value="";
-  document.getElementById("yesRadio").checked=false;
-  document.getElementById("noRadio").checked=false;
-  //close modal"
-  confirm=false;
-  modal4.style.display = "none";
+  
 }
